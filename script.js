@@ -1,4 +1,8 @@
-$(document).ready(function(){
+$(document).ready(function(){	
+	// $(".dropdown").click(function(){
+	// 	$(this).toggleClass("js_nav_active_box");
+	// });
+
 
 
 
