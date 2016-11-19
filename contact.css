@@ -1,5 +1,43 @@
 /*contact.css*/
+
+main.middle {
+  margin: 0 0 30px 0;
+  padding: 10px;
+  background: white;
+  white-space: nowrap;
+}
+.middle > * {
+  vertical-align: middle;
+}
+.left_half_viewport {
+	width: 50%;
+}
+.right_half_viewport {
+	width: 50%;
+}
+.contact_info {
+	display: inline-block;
+	color: goldenrod;
+	font-size: 2.25vw;
+	font-family: "Raleway";
+	letter-spacing: .175vw;
+	margin: 0;
+  	text-align: left;
+}
+.contact_info h2 {
+	font-size: 2.25vw;
+	text-transform: uppercase;
+}
+.contact_info p {
+	font-size: 2vw;
+}
 #map {
-  height: 400px;
-  width: 100%;
+	display: inline-block;
+  	height: 35vw;
+    /*margin-top: 11%;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+.middle > * {
+  vertical-align: middle;
 }
