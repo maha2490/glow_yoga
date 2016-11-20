@@ -61,8 +61,8 @@ button.standard:active {
 main.middle {
    	white-space: nowrap;
  	background-color: #f6ebcd;
-  	margin-top: -0.6%;
-  	padding: 3% 2%;
+  	margin-top: -1.5%;
+  	padding-top: 9%;
 }
 .middle > * {
   vertical-align: middle;
@@ -72,6 +72,9 @@ main.middle {
 }
 .right_half_viewport {
 	width: 50%;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
 }
 .contact_info {
 	display: inline-block;
@@ -80,24 +83,53 @@ main.middle {
 	font-family: "Raleway";
 	letter-spacing: .175vw;
 	margin: 0;
-  	text-align: left;
+  	text-align: center;
+  	padding-left: 5%;
+    padding-bottom: 7%;
 }
 .contact_info h2 {
 	font-size: 2.25vw;
 	text-transform: uppercase;
 	padding-bottom: 1%;
 }
-.contact_info p {
-	font-size: 1.1vw;
-	padding: 2% 0;
-}
-#map {
-	display: inline-block;
-  	height: 35vw;
-    /*margin-top: 11%;*/
+hr.contact_divider { 
+    display: block;
+    width: 35%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
     margin-left: auto;
     margin-right: auto;
+    border: 2px solid #fff;
+    border-width: 3px;
 }
-.middle > * {
-  vertical-align: middle;
+.contact_info p {
+	font-size: 1.1vw;
+	padding: 1% 0;
 }
+i.fa {
+	color: goldenrod;
+	padding: 3% 3%;
+}
+.classes_daily_banner {
+	background-color: #b38a25;
+	display: block;
+	color: #fff;
+	font-size: 1.1vw;
+	font-family: "Raleway";
+	letter-spacing: .175vw;
+	text-transform: uppercase;
+	margin: 0;
+  	text-align: center;
+  	padding: 3% 0;
+}
+#map {
+  	height: 35vw;
+    width: 100vw;
+/*    margin-left: auto;
+    margin-right: auto;*/
+}
+.contact_info_button {
+	margin-bottom: 4%;
+    margin-top: 11%
+}
+
