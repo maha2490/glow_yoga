@@ -1,6 +1,10 @@
 /*contact.css*/
 
 /*components__________________________________*/
+header {
+    background-color: #f6ebcd;
+    padding-top: 1.5%;
+}
 /*.btn {
 	font-family: "Raleway";
 	background: #28bfd7;
