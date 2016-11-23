@@ -2,7 +2,7 @@
 
 /*components__________________________________*/
 header {
-    background-color: #f6ebcd;
+    /*background-color: #f6ebcd;*/
     padding-top: 1.5%;
 }
 /*.btn {
@@ -16,42 +16,45 @@ header {
 }*/
 button.standard {
 	font-family: "Raleway";
-    text-transform: uppercase;
-    letter-spacing: .175vw;
-    background: #28bfd7;
-    background-image: -webkit-linear-gradient(top, #28bfd7, #2099ac);
-    background-image: -moz-linear-gradient(top, #28bfd7, #2099ac);
-    background-image: -ms-linear-gradient(top, #28bfd7, #2099ac);
-    background-image: -o-linear-gradient(top, #28bfd7, #2099ac);
-    background-image: linear-gradient(to bottom, #28bfd7, #2099ac);
-    -webkit-border-radius: 28;
-    -moz-border-radius: 28;
-    border-radius: 28px;
-    color: #ffffff;
-    font-size: 18px;
-    padding: 14px 22px 14px 22px;
-    text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .175vw;
+  background: #61E8E1;
+  background-image: -webkit-linear-gradient(top, #61E8E1, #1bb8b0);
+  background-image: -moz-linear-gradient(top, #61E8E1, #1bb8b0);
+  background-image: -ms-linear-gradient(top, #61E8E1, #1bb8b0);
+  background-image: -o-linear-gradient(top, #61E8E1, #1bb8b0);
+  background-image: linear-gradient(to bottom, #61E8E1, #1bb8b0);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  border-color: #61E8E1;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 14px 22px 14px 22px;
+  text-decoration: none;
 }
 button:focus {
 	outline:0;
 }
 button.standard:hover {
-    background: #2099ac;
-  	background-image: -webkit-linear-gradient(top, #2099ac, #28bfd7);
-  	background-image: -moz-linear-gradient(top, #2099ac, #28bfd7);
-  	background-image: -ms-linear-gradient(top, #2099ac, #28bfd7);
-  	background-image: -o-linear-gradient(top, #2099ac, #28bfd7);
-  	background-image: linear-gradient(to bottom, #2099ac, #28bfd7);
-  	text-decoration: none;
+  background: #1bb8b0;
+  background-image: -webkit-linear-gradient(top, #1bb8b0, #20dbd1);
+  background-image: -moz-linear-gradient(top, #1bb8b0, #20dbd1);
+  background-image: -ms-linear-gradient(top, #1bb8b0, #20dbd1);
+  background-image: -o-linear-gradient(top, #1bb8b0, #20dbd1);
+  background-image: linear-gradient(to bottom, #1bb8b0, #20dbd1);
+  text-decoration: none;
 }
 button.standard:active {
-    background: #166774;
-  	background-image: -webkit-linear-gradient(top, #166774, #125863);
-  	background-image: -moz-linear-gradient(top, #166774, #125863);
-  	background-image: -ms-linear-gradient(top, #166774, #125863);
- 	background-image: -o-linear-gradient(top, #166774, #125863);
-  	background-image: linear-gradient(to bottom, #166774, #125863);
-  	text-decoration: none;
+  background: #13857f;
+  background-image: -webkit-linear-gradient(top, #13857f, #18a7a0);
+  background-image: -moz-linear-gradient(top, #13857f, #18a7a0);
+  background-image: -ms-linear-gradient(top, #13857f, #18a7a0);
+  background-image: -o-linear-gradient(top, #13857f, #18a7a0);
+  background-image: linear-gradient(to bottom, #13857f, #18a7a0);
+  text-decoration: none;
 }
 
 .js_nav_active_box {
@@ -63,10 +66,12 @@ button.standard:active {
 
 /*__________________________________*/
 main.middle {
-   	white-space: nowrap;
+  white-space: nowrap;
  	background-color: #f6ebcd;
-  	margin-top: -1.5%;
-  	padding-top: 9%;
+  background-color: rgba(251,205,83,0.1);
+  background-color: rgb(254,238,198);
+  margin-top: -1.5%;
+  padding-top: 9%;
 }
 .middle > * {
   vertical-align: middle;
@@ -87,14 +92,17 @@ main.middle {
 	font-family: "Raleway";
 	letter-spacing: .175vw;
 	margin: 0;
-  	text-align: center;
-  	padding-left: 5%;
-    padding-bottom: 7%;
+	text-align: center;
+/*	padding-left: 5%;*/
+  padding-bottom: 7%;
 }
 .contact_info h2 {
 	font-size: 2.25vw;
 	text-transform: uppercase;
 	padding-bottom: 1%;
+  color: #423C33;
+  color: #C5952C;
+  color: #ad7f04;
 }
 hr.contact_divider { 
     display: block;
@@ -109,6 +117,7 @@ hr.contact_divider {
 .contact_info p {
 	font-size: 1.1vw;
 	padding: 1% 0;
+  color: #ad7f04;
 }
 i.fa {
 	color: goldenrod;
@@ -128,7 +137,7 @@ i.fa {
 }
 #map {
   	height: 35vw;
-    width: 100vw;
+    /*width: 100vw;*/
 /*    margin-left: auto;
     margin-right: auto;*/
 }
