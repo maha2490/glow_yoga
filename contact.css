@@ -4,6 +4,8 @@
 header {
     /*background-color: #f6ebcd;*/
     padding-top: 1.5%;
+    padding-bottom: 1%;
+    color: #ad7f04;
 }
 /*.btn {
 	font-family: "Raleway";
@@ -16,74 +18,71 @@ header {
 }*/
 button.standard {
 	font-family: "Raleway";
+  font-weight: 900;
   text-transform: uppercase;
   letter-spacing: .175vw;
-  background: #61E8E1;
-  background-image: -webkit-linear-gradient(top, #61E8E1, #1bb8b0);
-  background-image: -moz-linear-gradient(top, #61E8E1, #1bb8b0);
-  background-image: -ms-linear-gradient(top, #61E8E1, #1bb8b0);
-  background-image: -o-linear-gradient(top, #61E8E1, #1bb8b0);
-  background-image: linear-gradient(to bottom, #61E8E1, #1bb8b0);
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
-  border-color: #61E8E1;
+  /*background: #93f0eb;*/
+  background-color: #e7a905;
+  border-color: #e7a905;
   padding: 10px 20px 10px 20px;
+  text-decoration: none;
   text-decoration: none;
   color: #ffffff;
   font-size: 18px;
   padding: 14px 22px 14px 22px;
   text-decoration: none;
+  border-color: #e7a905;
 }
 button:focus {
 	outline:0;
 }
 button.standard:hover {
-  background: #1bb8b0;
-  background-image: -webkit-linear-gradient(top, #1bb8b0, #20dbd1);
-  background-image: -moz-linear-gradient(top, #1bb8b0, #20dbd1);
-  background-image: -ms-linear-gradient(top, #1bb8b0, #20dbd1);
-  background-image: -o-linear-gradient(top, #1bb8b0, #20dbd1);
-  background-image: linear-gradient(to bottom, #1bb8b0, #20dbd1);
+  background: #61e8e1;
   text-decoration: none;
 }
 button.standard:active {
-  background: #13857f;
-  background-image: -webkit-linear-gradient(top, #13857f, #18a7a0);
-  background-image: -moz-linear-gradient(top, #13857f, #18a7a0);
-  background-image: -ms-linear-gradient(top, #13857f, #18a7a0);
-  background-image: -o-linear-gradient(top, #13857f, #18a7a0);
-  background-image: linear-gradient(to bottom, #13857f, #18a7a0);
+  background: #94efeb;
+  background-image: -webkit-linear-gradient(top, #94efeb, #61E8E1);
+  background-image: -moz-linear-gradient(top, #94efeb, #61E8E1)
+  background-image: -ms-linear-gradient(top, #94efeb, #61E8E1);
+  background-image: -o-linear-gradient(top, #94efeb, #61E8E1);
+  background-image: linear-gradient(to bottom, #94efeb, #61E8E1);
   text-decoration: none;
 }
 
 .js_nav_active_box {
-	border: 2px solid #f6ebcd;
-    padding: 8%;
-    margin-top: -9%;
-    margin-bottom: -9%;
+/*	border: 2px solid #f6ebcd;*/
+  border: 2px solid rgba(246,235,205,0.7);
+  padding: 8%;
+  margin-top: -9%;
+  margin-bottom: -9%;
 }
 
 /*__________________________________*/
 main.middle {
   white-space: nowrap;
- 	background-color: #f6ebcd;
-  background-color: rgba(251,205,83,0.1);
-  background-color: rgb(254,238,198);
+  /*background-color: rgba(254,238,198, 0.8);
+  background-color: rgba(246,235,205,0.7);*/
+  background-color: #f9f2de;
   margin-top: -1.5%;
-  padding-top: 9%;
+  padding-top: 6%;
 }
 .middle > * {
   vertical-align: middle;
 }
 .left_half_viewport {
 	width: 50%;
+  padding-bottom: 6%;
 }
 .right_half_viewport {
 	width: 50%;
 	display: inline-block;
 	text-align: center;
 	vertical-align: top;
+  padding-bottom: 6%;
 }
 .contact_info {
 	display: inline-block;
@@ -99,20 +98,21 @@ main.middle {
 .contact_info h2 {
 	font-size: 2.25vw;
 	text-transform: uppercase;
-	padding-bottom: 1%;
   color: #423C33;
   color: #C5952C;
   color: #ad7f04;
+  padding-top: 4%;
+  padding-bottom: 1%;
 }
 hr.contact_divider { 
-    display: block;
-    width: 35%;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid #fff;
-    border-width: 3px;
+  display: block;
+  width: 35%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #fff;
+  border-width: 3px;
 }
 .contact_info p {
 	font-size: 1.1vw;
@@ -124,7 +124,7 @@ i.fa {
 	padding: 3% 3%;
 }
 .classes_daily_banner {
-	background-color: #b38a25;
+	background-color: #ad7f04;
 	display: block;
 	color: #fff;
 	font-size: 1.1vw;
@@ -132,17 +132,17 @@ i.fa {
 	letter-spacing: .175vw;
 	text-transform: uppercase;
 	margin: 0;
-  	text-align: center;
-  	padding: 3% 0;
+	text-align: center;
+	padding: 3% 0;
 }
 #map {
   	height: 35vw;
-    /*width: 100vw;*/
-/*    margin-left: auto;
-    margin-right: auto;*/
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .contact_info_button {
 	margin-bottom: 4%;
-    margin-top: 11%
+  margin-top: 2%
 }
 
