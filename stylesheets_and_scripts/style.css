@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Dancing+Script');
 
 *{
 	margin: 0;
@@ -25,19 +25,11 @@ a{
 #container{
 	width: 100%;
 	margin: 0 auto;
-
-	/*background: url(glow_sunset_background.jpeg) no-repeat center center fixed; */
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
 }
 
 header{
-	background-color: white;
+	background:rgba(255,255,255, 0.65);
 	padding-top: 2%;
-	/*padding-bottom: 1.5%;
-	margin-bottom: 2.5%;*/
 }
 
 header #header_left{
@@ -54,11 +46,10 @@ header #header_left{
     padding-left: 9%;
 }
 
-header #header_center{
+header #header_center {
 	width: 45%;
 	float: left;
 	box-sizing: border-box;
-	
 }
 
 header #header_center .center_left{
@@ -105,19 +96,17 @@ header #header_right{
 	font-size: 1.8vw;
 	font-family: "Raleway";
 	letter-spacing: .175vw;
-
 }
 
 nav{
-	/*margin-bottom: 2.5%;*/
 	box-sizing:border-box;
 }
 
 nav ul{
-    width: 57.5%;
+	width: 57.5%;
     background-color: transparent;
     position: relative;
-    top: -7vh;
+    top: -5vh;
     left: 36%;
 }
 
@@ -138,10 +127,10 @@ nav ul li a{
 /* Style The Dropdown Button */
 .dropbtn {
     background-color: transparent;
-    color: goldenrod;
     color: #ad7f04;
-    /*padding: 16px;*/
+    /*font-size: 16px;*/
     font-size: 18px;
+    font-size: 100%;
     border: none;
     cursor: pointer;
 }
@@ -187,7 +176,8 @@ nav ul li a{
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-	color: silver
+	color: goldenrod;
+
 }
 
 /* Show the dropdown menu on hover */
@@ -197,7 +187,8 @@ nav ul li a{
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn a {
-    color: silver;
+    color: #575e68;
+    font-weight: bold;
 }
 
 /***********  End Dropdown Nav Style  ***********/
@@ -208,8 +199,9 @@ nav ul li a{
 
 #slider{
 	margin-bottom: 2.5%;
-	margin-left: 2.5%;
-	margin-right: 2.5%;
+	/*margin-left: 2.5%;
+	margin-right: 2.5%;*/
+	background-color: white;
 }
 
 #slider img{
@@ -218,13 +210,26 @@ nav ul li a{
 
 #welcome_message{
 	margin-bottom: 2.5%;
-	margin-left: 2.5%;
-	margin-right: 2.5%;
+	/*margin-left: 2.5%;
+	margin-right: 2.5%*/;
+	background:rgba(255,255,255, 0.75);
+	padding: 2.5%;
+}
+
+#welcome_message .welcome_font{
+	font-family: "Dancing Script";
+    color: goldenrod;
+    font-size: 175%;
+    font-weight: bold;
+    padding-left: .25%;
+    padding-right: .25%;
+    line-height: 0;
+    letter-spacing: .15vw;
 }
 
 #welcome_message h3{
+	padding-bottom: 1.5%;
 	text-align: center;
-	text-transform: uppercase;
 	letter-spacing: .25vw;
 	font-family: "Raleway";
 }
@@ -242,11 +247,14 @@ nav ul li a{
 	text-align: center;
 }
 
+
+
 #boxes .box{
 	box-sizing: border-box;
 	width: 30%;
 	margin-bottom: 2.5%;
 	float: left;
+	background:rgba(255,255,255, 0.75);
 	
 }
 
@@ -263,7 +271,8 @@ nav ul li a{
 	text-align: center;
 	text-transform: lowercase;
 	font-family: "Raleway";
-	padding-top: 5%;	
+	padding-top: 5%;
+	padding-bottom: 5%;	
 }
 
 #boxes_left{
@@ -274,8 +283,8 @@ nav ul li a{
 }
 
 #boxes_left:hover{
-	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+	-webkit-filter: sepia(50%); /* Safari 6.0 - 9.0 */
+    filter: sepia(50%);
 }
 
 #boxes_center{
@@ -299,16 +308,27 @@ nav ul li a{
     filter: grayscale(100%);
 }
 
-
-
 footer{
 	text-align: center;
+	font-family: "Raleway";
+	letter-spacing: .2vw;
+	background:rgba(255,255,255, 0.75);
+	padding-top: 1%;
 }
 
 footer #footer_left{
 	width: 30%;
 	float: left;
 	box-sizing: border-box;
+}
+
+footer #footer_left i{
+	font-size: 120%;
+}
+
+footer #footer_left #i_center{
+	padding-left: 15%;
+	padding-right: 15%;
 }
 
 footer #footer_center{
@@ -322,6 +342,69 @@ footer #footer_right{
 	float: left;
 	box-sizing: border-box;
 }
+
+footer #footer_right h5{
+	font-size: 105%;
+}
+
+footer h6{
+	padding-top: 2.5%;
+}
+
+
+
+/***********  START FAQ.HTML  ***********/
+
+#faq_left{
+	width: 40%;
+	float: left;
+	box-sizing: border-box;
+}
+
+#faq_left img{
+	width: 30vw;
+	height: auto;
+	margin: 0 auto;
+}
+
+#faq_right{
+	padding-top: 5%;
+	width: 60%;
+	float: right;
+	box-sizing: border-box;
+
+}
+
+#faq_right h3{
+	box-sizing: border-box;
+	text-align: center;
+	width: 90%;
+	margin: 2.5% 5% 0% 5%;
+	padding:2% 0% 2% 0%;
+	color: #434343;
+	background-color: goldenrod;
+	border: 2px solid #434343;
+	text-transform: lowercase;
+    letter-spacing: 0.2vw;
+    font-family: "Raleway"
+}
+
+#faq_right p{
+	box-sizing: border-box;
+	width: 90%;
+	margin: 0% 5% 2.5% 5%;
+	padding: 2%;
+	color: #434343;
+	background-color: silver;
+	border: 2px solid #434343;
+	border-top: 0;
+	font-family: "Raleway";
+}
+
+
+
+
+/***********  END FAQ.HTML  ***********/
 
 
 

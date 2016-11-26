@@ -119,21 +119,16 @@ hr.contact_divider {
 	padding: 1% 0;
   color: #ad7f04;
 }
-i.fa {
-	color: goldenrod;
-	padding: 3% 3%;
-}
 .classes_daily_banner {
-	background-color: #ad7f04;
-	display: block;
-	color: #fff;
-	font-size: 1.1vw;
-	font-family: "Raleway";
-	letter-spacing: .175vw;
-	text-transform: uppercase;
-	margin: 0;
-	text-align: center;
-	padding: 3% 0;
+	background-color: #fff;
+  display: block;
+  color: #e7a905;
+  font-size: 2vw;
+  font-family: "Raleway";
+  letter-spacing: .175vw;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
 }
 #map {
   	height: 35vw;
@@ -144,5 +139,8 @@ i.fa {
 .contact_info_button {
 	margin-bottom: 4%;
   margin-top: 2%
+}
+.find_class_button {
+  margin-left: -1%;
 }
 
