@@ -6,9 +6,9 @@ $(document).ready(function(){
 	// 		$(this).next().slideToggle();  //  .next, .siblings
 			
 	// 	});
-	$("main #faq_right p").hide();
+	$("main #faq_left p").hide();
 
-	$("main #faq_right h3").click(function(){
+	$("main #faq_left h3").click(function(){
 			$(this).next().slideToggle(); 
 			
 		});
