@@ -326,9 +326,9 @@ footer #footer_left{
 	box-sizing: border-box;
 }
 
-/*footer #footer_left i{
-	font-size: 120%;
-}*/
+footer #footer_left i{
+	font-size: 2vw;
+}
 
 footer #footer_left #i_center{
 	padding-left: 15%;
@@ -350,7 +350,7 @@ footer #footer_right{
 }
 
 footer #footer_right h5{
-	font-size: 105%;
+	font-size: 1.35vw;
 }
 
 footer h6 {
@@ -361,66 +361,105 @@ footer h6 {
 
 
 
-/***********  START FAQ.HTML  ***********/
-
-#faq_left{
+#faq_right{
 	width: 40%;
-	float: left;
+	float: right;
 	box-sizing: border-box;
 }
 
-#faq_left img{
-	width: 30vw;
+#faq_right img{
+	width: 27.5vw;
+	padding-top: 5%;
 	height: auto;
 	margin: 0 auto;
 }
 
-#faq_right{
+#faq_left{
 	padding-top: 5%;
 	width: 60%;
-	float: right;
+	float: left;
 	box-sizing: border-box;
-
 }
 
-#faq_right h3{
+#faq_left h3{
 	box-sizing: border-box;
 	text-align: center;
-	width: 90%;
-	margin: 2.5% 5% 0% 5%;
-	padding:2% 0% 2% 0%;
+	width: 80%;
+	margin: .5% 5% 0% 15%;
+	padding:1.75% 0% 1.75% 0%;
 	color: #434343;
-	background-color: goldenrod;
-	border: 2px solid #434343;
+	background-color: #ad7f04;
 	text-transform: lowercase;
     letter-spacing: 0.2vw;
     font-family: "Raleway"
 }
 
-#faq_right p{
+#faq_left h3:hover{
+	background-color: silver;
+}
+
+#faq_left p{
 	box-sizing: border-box;
-	width: 90%;
-	margin: 0% 5% 2.5% 5%;
-	padding: 2%;
+	width: 80%;
+	margin: 0% 5% 0% 15%;
+	padding: 0% 5% 2% 5%;
 	color: #434343;
 	background-color: silver;
-	border: 2px solid #434343;
-	border-top: 0;
+	text-align: justify;
 	font-family: "Raleway";
 }
 
-
-
-
 /***********  END FAQ.HTML  ***********/
 
+/***********  START FAMILY.HTML  ***********/
 
+.instructor{
+	margin: 2.5% 0% 2.5% 0%;
+	box-sizing: border-box;
+}
 
+.instructor_photo{
+	width: 40%;
+	float: left;
+	box-sizing: border-box;
+}
 
+.instructor_photo img{
+	width: 25vw;
+	height: auto;
+	margin: 0 auto;
+}
 
+.instructor_bio{
+	width: 60%;
+	float: right;
+	box-sizing: border-box;
+}
 
+.instructor_bio h3{
+	padding: 2.5% 10% 0% 0%;
+	font-family: "Raleway";
+	color: #7e7e7e;
+	font-size: 2.5vw;
+    letter-spacing: .1vw;
+}
 
+.instructor_bio h4{
+	padding: .75% 10% 0% 0%;
+	font-family: "Dancing Script";
+	color: #ad7f04;
+	font-size: 2.55vw;
+    letter-spacing: .125vw;
+}
 
+.instructor_bio p{
+	text-align: justify;
+	text-justify: auto;
+	padding: 1.5% 10% 5% 0%;
+	font-family: "Open Sans";
+	color: #7e7e7e;
+	font-size: 1.65vw;
+	box-sizing: border-box;
+}
 
-
-
+/***********  END FAMILY.HTML  ***********/
