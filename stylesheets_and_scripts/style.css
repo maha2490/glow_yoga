@@ -134,6 +134,10 @@ nav ul li a{
     border: none;
     cursor: pointer;
 }
+/* Style The Dropdown Button */
+.dropbtn:hover {
+	color: #7E7E7E;
+}
 .dropbtn.events {
 	padding-left: 12%; 
 }
@@ -205,7 +209,7 @@ nav ul li a{
 }
 
 #slider img{
-	height: 75vh;
+	height: 40vw;
 }
 #welcome_message,
 #boxes {
