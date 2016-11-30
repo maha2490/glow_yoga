@@ -107,6 +107,7 @@ header #header_right{
 	margin-left: 12%;
 }
 .header_social_icons {
+	font-size: 1.6vw;
 	padding: 2.5% 2%;
     display: inline-block;
     -moz-border-radius: 100px;
@@ -427,7 +428,6 @@ footer h6 a:hover{
 	color: #ad7f04;
 }
 
-
 /*************** FAQ.HTML  ***********/
 #faq_right{
 	width: 40%;
@@ -456,7 +456,7 @@ footer h6 a:hover{
 	margin: .5% 5% 0% 15%;
 	padding:1.75% 0% 1.75% 0%;
 	color: #434343;
-	background-color: #ad7f04;
+	background-color: #f9f2ee;
 	text-transform: lowercase;
     letter-spacing: 0.2vw;
     font-family: "Raleway"
