@@ -411,13 +411,19 @@ footer #footer_right h5{
 	box-sizing:border-box;
 	font-size: 1.65vw;
 }
-footer #footer_bottom {
-    /*background-color: rgba(249, 242, 222, 0.4);*/
-    color: #7e7e7e;
-    height: 100%;
-    margin-top: 2.5%;
-    padding: 1% 0;
+
+footer h6 {
+	box-sizing:border-box;
+	color: #7e7e7e;
+	font-size: 1vw;
+	margin-top: 4vw;
+    margin-bottom: 1vw;
 }
+
+footer h6 a:hover{
+	color: #ad7f04;
+}
+
 
 /*************** FAQ.HTML  ***********/
 #faq_right{
