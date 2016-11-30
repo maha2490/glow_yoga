@@ -107,7 +107,6 @@ header #header_right{
 	margin-left: 12%;
 }
 .header_social_icons {
-	font-size: 1.6vw;
 	padding: 2.5% 2%;
     display: inline-block;
     -moz-border-radius: 100px;
@@ -117,6 +116,9 @@ header #header_right{
     -webkit-box-shadow: 0px 0px 2px #7e7e7e;
     box-shadow: 0px 0px 2px #7e7e7e;
     margin: 0 2%;
+}
+.fa.fa-lg {
+	font-size: 1.6vw;
 }
 .fa-facebook.header_social_icons {
 	padding: 2.5% 3%;
