@@ -380,6 +380,7 @@ footer #footer_left{
 	width: 30%;
 	float: left;
 	box-sizing: border-box;
+	padding-top: 0.3%;
 }
 
 footer #footer_left i{
@@ -415,9 +416,9 @@ footer #footer_right h5{
 footer h6 {
 	box-sizing:border-box;
 	color: #7e7e7e;
-	font-size: 1vw;
+	font-size: 0.8vw;
+	padding-bottom: 1vw;
 	margin-top: 4vw;
-    margin-bottom: 1vw;
 }
 
 footer h6 a:hover{
