@@ -155,7 +155,7 @@ nav ul li a{
     color: #ad7f04;
     /*font-size: 16px;*/
     font-size: 18px;
-    font-size: 100%;
+    font-size: 1.45vw;
     border: none;
     cursor: pointer;
 }
@@ -198,7 +198,14 @@ nav ul li a{
     text-decoration: none;
     display: block;
 }
-
+.dropdown-content a .d_font{
+	font-family: "Dancing Script";
+    /*color: #ad7f04;*/
+    color: goldenrod;
+    text-transform: lowercase;
+    font-size: 1.75vw;
+    font-weight: bold;
+}
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
 	color: goldenrod;
@@ -353,7 +360,8 @@ footer #footer_left{
 }
 
 footer #footer_left i{
-	font-size: 2vw;
+	box-sizing: border-box;
+	font-size: 1.65vw;
 }
 
 footer #footer_left #i_center{
@@ -367,6 +375,7 @@ footer #footer_center{
 	box-sizing: border-box;
 	color: #7e7e7e;
 	padding-top: 0.5%;
+	font-size: 1.5vw;
 }
 
 footer #footer_right{
@@ -376,7 +385,8 @@ footer #footer_right{
 }
 
 footer #footer_right h5{
-	font-size: 1.35vw;
+	box-sizing:border-box;
+	font-size: 1.65vw;
 }
 footer #footer_bottom {
     /*background-color: rgba(249, 242, 222, 0.4);*/
@@ -386,7 +396,7 @@ footer #footer_bottom {
     padding: 1% 0;
 }
 
-/*FAQ PAGE_________________________________________*/
+/*************** FAQ.HTML  ***********/
 #faq_right{
 	width: 40%;
 	float: right;
@@ -444,9 +454,15 @@ footer #footer_bottom {
 	box-sizing: border-box;
 }
 
-.instructor_photo{
+.instructor .instructor_photo{
 	width: 40%;
 	float: left;
+	box-sizing: border-box;
+}
+
+.instructor_2 .instructor_photo{
+	width: 40%;
+	float: right;
 	box-sizing: border-box;
 }
 
@@ -456,36 +472,124 @@ footer #footer_bottom {
 	margin: 0 auto;
 }
 
-.instructor_bio{
+.instructor .instructor_bio{
 	width: 60%;
 	float: right;
 	box-sizing: border-box;
 }
 
+.instructor .instructor_bio{
+	width: 60%;
+	float: left;
+	box-sizing: border-box;
+}
+
 .instructor_bio h3{
-	padding: 2.5% 10% 0% 0%;
 	font-family: "Raleway";
 	color: #7e7e7e;
 	font-size: 2.5vw;
     letter-spacing: .1vw;
 }
 
+.instructor .instructor_bio h3{
+	padding: 2.5% 10% 0% 0%;
+}
+
+.instructor_2 .instructor_bio h3{
+	padding: 2.5% 0% 0% 10%;
+}
+
 .instructor_bio h4{
-	padding: .75% 10% 0% 0%;
 	font-family: "Dancing Script";
 	color: #ad7f04;
 	font-size: 2.55vw;
     letter-spacing: .125vw;
 }
 
+.instructor .instructor_bio h4{
+	padding: .75% 10% 0% 0%;
+}
+
+.instructor_2 .instructor_bio h4{
+	padding: .75% 0% 0% 10%;
+}
+
 .instructor_bio p{
 	text-align: justify;
 	text-justify: auto;
-	padding: 1.5% 10% 5% 0%;
 	font-family: "Open Sans";
 	color: #7e7e7e;
 	font-size: 1.65vw;
 	box-sizing: border-box;
 }
 
+.instructor .instructor_bio p{
+	padding: 1.5% 10% 5% 0%;
+}
+
+.instructor_2 .instructor_bio p{
+	padding: 1.5% 0% 5% 10%;
+}
+
 /***********  END FAMILY.HTML  ***********/
+
+/***********  START SPACE.HTML  ***********/
+
+#space_page{
+	background-color: #f9f2de;  
+}
+
+#space_intro{
+	padding: 2.5% 5% 2.5% 5%;
+	box-sizing: border-box;
+}
+
+#space_intro h3{
+	text-align: center;
+	font-family: "Raleway";
+	font-size: 1.65vw;
+	color: #ad7f04;
+	padding-bottom: 1%;
+}
+
+#space_intro p{
+	text-align: center;
+	text-align: justify;
+	text-justify: auto;
+	font-family: "Open Sans";
+	font-size: 1.25vw;
+	color: #7e7e7e;
+	padding: 0% 1% 0% 1%;
+}
+
+#space_images .space{
+	width: 33.33%;
+	float: left;
+	box-sizing: border-box;
+}
+
+#space_images{
+	margin: 2.5% 2.5% 0% 2.5%;
+}
+
+#space_images .space{
+	margin-bottom: 2.5%;
+}
+
+#space_images .space img{
+	width: 25vw;
+	height: 45vh;
+	margin: 0 auto;
+}
+
+#space_images .space h4{
+	padding-top: 5%;
+	text-align: center;
+	font-family: "Raleway";
+	font-size: 1.3vw;
+	text-transform: lowercase;
+	color: #7e7e7e;
+}
+
+
+/***********  END SPACE.HTML  ***********/
