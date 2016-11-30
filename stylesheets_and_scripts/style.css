@@ -245,10 +245,6 @@ nav ul li a{
 	background-color: #f9f2de;
 }
 #welcome_message{
-	/*margin-bottom: 2.5%;*/
-	/*margin-left: 2.5%;
-	margin-right: 2.5%*/;
-	/*background:rgba(255,255,255, 0.75);*/
 	padding: 7.5%;
 }
 
@@ -269,20 +265,43 @@ nav ul li a{
 	letter-spacing: .25vw;
 	font-family: "Raleway";
 }
-
-#welcome_message h3 img{
-	display: inline-block;
-	width: 2%;
-	height: auto;
+#welcome_message h3 #welcome_font_h3{
+	font-family: "Dancing Script";
+   /* color: #ad7f04;*/
+    color: goldenrod;
+	font-size: 3.5vw;
+	font-weight: bold;
+    padding-left: .25%;
+    padding-right: .25%;
+    line-height: 0;
+    letter-spacing: .125vw;
 }
 
 #welcome_message p{
 	text-align: justify;
 	text-justify: auto;
 	font-family: "Open Sans";
+	font-size: 1.25vw;
 	text-align: center;
 	color: #7e7e7e;
     line-height: 4.25vh;
+}
+
+#welcome_message h4{
+	text-align: center;
+	/*font-family: "Poiret One";*/
+	font-family: "Raleway";
+	text-transform: lowercase;
+	color: #7e7e7e;
+	font-size: 1.75vw;
+	padding-top: 3.5%;
+}
+
+#welcome_message h4 img{
+	display: inline-block;
+	width: 2.25%;
+	height: auto;
+	padding: 0% 3.5% 0% 3.5%;
 }
 
 #boxes .box{
