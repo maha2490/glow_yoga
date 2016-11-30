@@ -327,8 +327,10 @@ nav ul li a{
 
 #boxes .box .boxes_bottom h4{
 	text-align: center;
-	text-transform: uppercase;
+	text-transform: lowercase;
 	font-family: "Raleway";
+	color: #7e7e7e;
+	font-size: 1.35vw;
 	padding-top: 5%;
 	padding-bottom: 5%;	
 }
