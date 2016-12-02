@@ -196,7 +196,7 @@ nav ul li a{
     display: none;
     position: absolute;
     background-color: transparent;
-    min-width: 185px;
+    min-width: 188px;
     letter-spacing: .1vw;
     z-index: 200000000;
     background-color: #fff;
@@ -208,7 +208,7 @@ nav ul li a{
     color: #e7a905;
     font-family: "Raleway";
     font-size: 1vw;
-    padding: 16px 23px 12px 27px;
+    padding: 16px 23px 15px 27px;
     text-decoration: none;
     display: block;
 }
@@ -220,6 +220,12 @@ nav ul li a{
     font-size: 3vw;
     font-weight: 500;
     letter-spacing: initial;
+}
+.dropdown-content a.dropdown_padding_none {
+	padding: 0 23px 0 27px; 
+}
+.dropdown-content a.dropdown_padding_add {
+	padding-top: 22px; 
 }
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
