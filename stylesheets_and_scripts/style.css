@@ -213,12 +213,13 @@ nav ul li a{
     display: block;
 }
 .dropdown-content a .d_font{
-	font-family: "Dancing Script";
-    /*color: #ad7f04;*/
-    color: goldenrod;
+	/*font-family: "Dancing Script";*/
+    font-family: 'foxglow-regular';
+    color: #e7a905;
     text-transform: lowercase;
-    font-size: 1.75vw;
-    font-weight: bold;
+    font-size: 3vw;
+    font-weight: 500;
+    letter-spacing: initial;
 }
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
@@ -263,14 +264,14 @@ nav ul li a{
 }
 
 #welcome_message .welcome_font{
-	font-family: "Dancing Script";
-    color: goldenrod;
-    font-size: 175%;
-    font-weight: bold;
+	font-family: 'foxglow-regular';
+    color: #e7a905;
+    font-size: 3.5vw;
+    font-weight: 500;
     padding-left: .25%;
     padding-right: .25%;
     line-height: 0;
-    letter-spacing: .15vw;
+    letter-spacing: normal;
 }
 
 #welcome_message h3{
@@ -284,22 +285,21 @@ nav ul li a{
 	font-size: 2.5vw;
 }
 #welcome_message h3 #welcome_font_h3{
-	font-family: "Dancing Script";
-   /* color: #ad7f04;*/
-    color: goldenrod;
-	font-size: 3.5vw;
-	font-weight: bold;
+    font-family: 'foxglow-regular';
+    color: #e7a905;
+    font-size: 7.5vw;
+    font-weight: 500;
     padding-left: .25%;
     padding-right: .25%;
     line-height: 0;
-    letter-spacing: .125vw;
+    letter-spacing: normal;
 }
 
 #welcome_message p{
 	text-align: justify;
 	text-justify: auto;
 	font-family: "Open Sans";
-	font-size: 1.25vw;
+	font-size: 1.1vw;
 	text-align: center;
 	color: #7e7e7e;
     line-height: 4.25vh;
