@@ -1,5 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Dancing+Script');
+/*style.css*/
 
+/*FONTS_________________________________________*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Dancing+Script');
+@font-face {
+    font-family: 'foxglow-regular';
+    src: url('../fonts/Foxglow-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*GLOBALS_______________________________________*/
 *{
 	margin: 0;
 	padding: 0;
@@ -27,6 +37,7 @@ a{
 	margin: 0 auto;
 }
 
+/*EVERYTHING ELSE_________________________________________*/
 header{
 	background:rgba(255,255,255, 0.65);
 	padding-top: 2%;

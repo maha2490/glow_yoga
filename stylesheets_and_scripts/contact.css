@@ -1,5 +1,13 @@
 /*contact.css*/
 
+
+/*TESTING OUT THE FONT FACE THING*/
+@font-face {
+    font-family: 'foxglow-regular';
+    src: url('../fonts/Foxglow-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
 /*components__________________________________*/
 header {
     /*background-color: #f6ebcd;*/
@@ -148,7 +156,10 @@ hr.contact_divider {
 .prices_boxes section {
   display: inline-block;
 }
-
+#test {
+  font-family: 'foxglow-regular';
+  font-size: 5em;
+}
 
 
 
