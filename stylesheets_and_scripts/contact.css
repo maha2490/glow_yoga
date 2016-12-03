@@ -152,15 +152,50 @@ hr.contact_divider {
 }
 
 /*pricing.html_____________________________*/
+main.prices_page {
+  background-color: #F9F2DE;
+  font-family: 'Raleway', sans-serif;
+}
+.prices_boxes {
+  padding: 5% 0;
+}
 .prices_boxes section {
   display: inline-block;
+  width: 33%;
+  box-sizing: border-box;
+  padding: 2% 4%;
+  text-align: center;
 }
-#test {
-  font-family: 'foxglow-regular';
-  font-size: 5em;
+.prices_boxes section.middle {
+  padding-top: 5%;
 }
+.prices_boxes section div {
+   border: 2px solid #E7A905;
+   padding: 1% 2%;
+   color: #7E7E7E;
+}
+section h3.pricing_header {
+  text-align: center;
+  font-size: 2vw;
+  padding: 3% 0;
+}
+.prices_boxes section table {
+  width: 100%;
+  text-align: center;
+}
+.prices_boxes section table td {
+  padding: 2% 1% 3% 1%;
+}
+table tr td.table_subheader {
 
-
+}
+.add_ons {
+  color: #7E7E7E;
+  padding: 0 5%;
+}
+.add_ons h3 {
+  font-size: 2vw;
+}
 
 
 

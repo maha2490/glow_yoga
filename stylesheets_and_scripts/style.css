@@ -169,7 +169,7 @@ nav ul li a{
     color: #ad7f04;
     /*font-size: 16px;*/
     font-size: 18px;
-    font-size: 1.45vw;
+    font-size: 1.3vw;
     border: none;
     cursor: pointer;
 }
@@ -308,7 +308,7 @@ nav ul li a{
 	font-size: 1.1vw;
 	text-align: center;
 	color: #7e7e7e;
-    line-height: 4.25vh;
+    line-height: 5vh;
 }
 
 #welcome_message h4{
