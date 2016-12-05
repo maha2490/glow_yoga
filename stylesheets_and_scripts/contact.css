@@ -170,14 +170,16 @@ main.prices_page {
   padding-top: 5%;
 }
 .prices_boxes section div {
-   border: 2px solid #E7A905;
+   /*border: 2px solid #E7A905;*/
    padding: 1% 2%;
    color: #7E7E7E;
+   background-color: #fff;
+   height: 15vw;
 }
 section h3.pricing_header {
   text-align: center;
   font-size: 2vw;
-  padding: 3% 0;
+  padding: 4% 0;
 }
 .prices_boxes section table {
   width: 100%;
@@ -191,12 +193,18 @@ table tr td.table_subheader {
 }
 .add_ons {
   color: #7E7E7E;
-  padding: 0 5%;
+  padding: 3% 5%;
 }
 .add_ons h3 {
   font-size: 2vw;
 }
-
+.add_ons_underline {
+  display: block;
+  border: 2px solid #ad7f04;;
+}
+.add_ons table td:nth-child(2) {
+  padding: 2% 27%;
+}
 
 
 
