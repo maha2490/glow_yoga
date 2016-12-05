@@ -188,8 +188,8 @@ nav ul li a{
 }
 
 .dropdown .dropbtn a{
-	/*text-transform: lowercase;*/
-	text-transform: uppercase;
+	text-transform: lowercase;
+	/*text-transform: uppercase;*/
 }
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
@@ -395,7 +395,7 @@ footer{
 	background:rgba(255,255,255, 0.75);
 	padding-top: 2.5%;
 	color: #ad7f04;
-	background-color: rgba(249, 242, 222, 0.4);
+	/*background-color: rgba(249, 242, 222, 0.4);*/
 }
 
 footer #footer_left{
