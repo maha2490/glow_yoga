@@ -284,8 +284,8 @@ nav ul li a{
 	color: #7e7e7e;
 	padding-bottom: 2.5%;
 	text-align: center;
-	letter-spacing: .25vw;
-	/*font-family: "Poiret One";*/
+	letter-spacing: .35vw;
+	text-transform: lowercase;
 	font-family: "Raleway";
 	font-weight: bold;
 	font-size: 2.5vw;
@@ -321,10 +321,9 @@ nav ul li a{
 	padding-top: 3.5%;
 }
 
-#welcome_message h4 img{
-	display: inline-block;
-	width: 2.25%;
-	height: auto;
+#welcome_message h4 span{
+	color: #e7a905; 
+	font-size: 2.25vw;
 	padding: 0% 3.5% 0% 3.5%;
 }
 
@@ -448,6 +447,11 @@ footer h6 a:hover{
 }
 
 /*************** FAQ.HTML  ***********/
+#faq_page{
+	background-color: #f9f2de;
+	padding: .25% 0% 1.25% 0%;
+}
+
 #faq_right{
 	width: 40%;
 	float: right;
@@ -475,14 +479,15 @@ footer h6 a:hover{
 	margin: .5% 5% 0% 15%;
 	padding:1.75% 0% 1.75% 0%;
 	color: #434343;
-	background-color: #f9f2ee;
+	background-color: rgb(216, 182, 106);
 	text-transform: lowercase;
     letter-spacing: 0.2vw;
-    font-family: "Raleway"
+    font-family: "Open Sans";
+
 }
 
 #faq_left h3:hover{
-	background-color: silver;
+	background-color: #cccac7;
 }
 
 #faq_left p{
@@ -491,7 +496,7 @@ footer h6 a:hover{
 	margin: 0% 5% 0% 15%;
 	padding: 0% 5% 2% 5%;
 	color: #434343;
-	background-color: silver;
+	background-color: #cccac7;
 	text-align: justify;
 	font-family: "Raleway";
 }
@@ -499,6 +504,11 @@ footer h6 a:hover{
 /***********  END FAQ.HTML  ***********/
 
 /***********  START FAMILY.HTML  ***********/
+
+#family_page{
+	background-color: #f9f2de;
+	padding: .25% 0% 1.25% 0%;
+}
 
 .instructor{
 	margin: 2.5% 0% 2.5% 0%;
@@ -646,6 +656,10 @@ footer h6 a:hover{
 /***********  END SPACE.HTML  ***********/
 
 /***********  START EVENTS.HTML  ***********/
+#events_page{
+	background-color: #f9f2de;
+	padding: .25% 0% 2.5% 0%;
+}
 
 #events_page .event{
 	margin: 2.5% 5% 2.5% 5%;
@@ -697,6 +711,11 @@ footer h6 a:hover{
 /***********  END EVENTS.HTML  ***********/
 
 /***********  START STYLES.HTML  ***********/
+
+#styles_page{
+	background-color: #f9f2de;
+	padding: .25% 0% 2.5% 0%;
+}
 
 #styles_page #styles_top{
 	margin: 2.5% 0% 0% 5%;
