@@ -166,6 +166,13 @@ main.prices_page {
   padding: 2% 2%;
   text-align: center;
 }
+.prices_boxes section.two_thirds {
+  display: inline-block;
+  width: 66%;
+  box-sizing: border-box;
+  padding: 5% 2% 2% 2%;
+  text-align: center;
+}
 .prices_boxes section div {
   border: 2px solid #E7A905;
   padding: 3% 2% 6% 2%;
@@ -175,8 +182,13 @@ main.prices_page {
 }
 .prices_boxes section div.drop_in,
 .prices_boxes section div.new_member_special {
-    position: relative;
-    top: 3vw;
+  position: relative;
+  /*top: 3vw;*/
+  top: 0.5vw;
+}
+.prices_boxes section div.mat_towel {
+  position: relative;
+  top: 7vw;
 }
 section h3.pricing_header {
   text-align: center;
@@ -204,7 +216,8 @@ p.new_member_disclaimers {
   padding-top: 0;
 }
 table tr td.price_breakdown {
-  padding-bottom: 3%;
+  /*padding-bottom: 3%;*/
+  padding-bottom: 0;
 }
 p.new_member_disclaimers {
   position: absolute;
@@ -213,8 +226,10 @@ p.new_member_disclaimers {
 }
 p.class_packages_disclaimers.first {
   position: absolute;
-  top: 41vw;
-  left: 38vw;
+  /*top: 41vw;
+  left: 38vw;*/
+  top: 68vw;
+  left: 21vw;
   color: #7e7e7e;
 }
 /*p.class_packages_disclaimers.second {
@@ -224,18 +239,21 @@ p.class_packages_disclaimers.first {
 }*/
 .add_ons {
   color: #7E7E7E;
-  padding: 3% 5%;
+  padding: 3% 2%;
 }
 .add_ons h3 {
   font-size: 2vw;
+  font-family: 'Open Sans', sans-serif;
+  padding: 1% 0 1% 0;
 }
 .add_ons_underline {
   display: block;
-  border: 2px solid #ad7f04;;
+  border: 1px solid #E7A905;
 }
-.add_ons table td:nth-child(2) {
-  padding: 2% 27%;
+.add_ons p{
+  padding: 1% 0;
 }
+
 
 
 
