@@ -61,8 +61,11 @@ button.standard:active {
 }
 
 .js_nav_active_box {
-    border: 2px solid #f9f2de;
-    padding: 8% 5% 8% 2%;
+    /*border: 2px solid #f9f2de;*/
+    border-top: 2px solid #f9f2de;
+    border-right: 2px solid #f9f2de;
+    border-left: 2px solid #f9f2de;
+    padding: 8% 5% 8% 5%;
     margin-top: -9%;
     margin-bottom: -9%;
     margin-left: 13.5%;
@@ -157,54 +160,103 @@ main.prices_page {
   font-family: 'Raleway', sans-serif;
 }
 .prices_boxes {
-  padding: 5% 0;
+  padding: 3% 0;
 }
 .prices_boxes section {
   display: inline-block;
   width: 33%;
   box-sizing: border-box;
-  padding: 2% 4%;
+  padding: 2% 2%;
   text-align: center;
 }
-.prices_boxes section.middle {
-  padding-top: 5%;
+.prices_boxes section.two_thirds {
+  display: inline-block;
+  width: 66%;
+  box-sizing: border-box;
+  padding: 5% 2% 2% 2%;
+  text-align: center;
 }
 .prices_boxes section div {
-   /*border: 2px solid #E7A905;*/
-   padding: 1% 2%;
-   color: #7E7E7E;
-   background-color: #fff;
-   height: 15vw;
+  border: 2px solid #E7A905;
+  padding: 3% 2% 6% 2%;
+  color: #7E7E7E;
+  background-color: #fff;
+  min-height: 9vw;
+}
+.prices_boxes section div.drop_in,
+.prices_boxes section div.new_member_special {
+  position: relative;
+  /*top: 3vw;*/
+  top: 0.5vw;
+}
+.prices_boxes section div.mat_towel {
+  position: relative;
+  top: 7vw;
 }
 section h3.pricing_header {
   text-align: center;
   font-size: 2vw;
-  padding: 4% 0;
+  padding: 1% 0 2% 0;
+  font-family: 'Open Sans', sans-serif;
 }
 .prices_boxes section table {
   width: 100%;
   text-align: center;
 }
 .prices_boxes section table td {
-  padding: 2% 1% 3% 1%;
+  padding: 2% 0 1% 0;
 }
-table tr td.table_subheader {
-
+.prices_boxes section table td.buy_now {
+  color: #e7a905;
+  font-weight: bold;
+  cursor: text;
 }
+table tr td.table_subheader,
+table tr td.price_breakdown,
+p.class_packages_disclaimers,
+p.new_member_disclaimers {
+  font-size: 0.8vw;
+  padding-top: 0;
+}
+table tr td.price_breakdown {
+  /*padding-bottom: 3%;*/
+  padding-bottom: 0;
+}
+p.new_member_disclaimers {
+  position: absolute;
+  top: 8vw;
+  left: 3.5vw;
+}
+p.class_packages_disclaimers.first {
+  position: absolute;
+  /*top: 41vw;
+  left: 38vw;*/
+  top: 68vw;
+  left: 21vw;
+  color: #7e7e7e;
+}
+/*p.class_packages_disclaimers.second {
+  position: absolute;
+  top: 114%;
+  left: 11%;
+}*/
 .add_ons {
   color: #7E7E7E;
-  padding: 3% 5%;
+  padding: 3% 2%;
 }
 .add_ons h3 {
   font-size: 2vw;
+  font-family: 'Open Sans', sans-serif;
+  padding: 1% 0 1% 0;
 }
 .add_ons_underline {
   display: block;
-  border: 2px solid #ad7f04;;
+  border: 1px solid #E7A905;
 }
-.add_ons table td:nth-child(2) {
-  padding: 2% 27%;
+.add_ons p{
+  padding: 1% 0;
 }
+
 
 
 

@@ -200,6 +200,7 @@ nav ul li a{
     letter-spacing: .1vw;
     z-index: 200000000;
     background-color: #fff;
+    text-transform: lowercase;
 }
 
 /* Links inside the dropdown */
