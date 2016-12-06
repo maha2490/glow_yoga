@@ -1,0 +1,139 @@
+/*contact.css*/
+
+/*components__________________________________*/
+header {
+    background-color: #f6ebcd;
+    padding-top: 1.5%;
+}
+/*.btn {
+	font-family: "Raleway";
+	background: #28bfd7;
+	border-radius: 28px;
+   	color: #ffffff;
+    font-size: 20px;
+  	padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}*/
+button.standard {
+	font-family: "Raleway";
+    text-transform: uppercase;
+    letter-spacing: .175vw;
+    background: #28bfd7;
+    background-image: -webkit-linear-gradient(top, #28bfd7, #2099ac);
+    background-image: -moz-linear-gradient(top, #28bfd7, #2099ac);
+    background-image: -ms-linear-gradient(top, #28bfd7, #2099ac);
+    background-image: -o-linear-gradient(top, #28bfd7, #2099ac);
+    background-image: linear-gradient(to bottom, #28bfd7, #2099ac);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 14px 22px 14px 22px;
+    text-decoration: none;
+}
+button:focus {
+	outline:0;
+}
+button.standard:hover {
+    background: #2099ac;
+  	background-image: -webkit-linear-gradient(top, #2099ac, #28bfd7);
+  	background-image: -moz-linear-gradient(top, #2099ac, #28bfd7);
+  	background-image: -ms-linear-gradient(top, #2099ac, #28bfd7);
+  	background-image: -o-linear-gradient(top, #2099ac, #28bfd7);
+  	background-image: linear-gradient(to bottom, #2099ac, #28bfd7);
+  	text-decoration: none;
+}
+button.standard:active {
+    background: #166774;
+  	background-image: -webkit-linear-gradient(top, #166774, #125863);
+  	background-image: -moz-linear-gradient(top, #166774, #125863);
+  	background-image: -ms-linear-gradient(top, #166774, #125863);
+ 	background-image: -o-linear-gradient(top, #166774, #125863);
+  	background-image: linear-gradient(to bottom, #166774, #125863);
+  	text-decoration: none;
+}
+
+.js_nav_active_box {
+	border: 2px solid #f6ebcd;
+    padding: 8%;
+    margin-top: -9%;
+    margin-bottom: -9%;
+}
+
+/*__________________________________*/
+main.middle {
+   	white-space: nowrap;
+ 	background-color: #f6ebcd;
+  	margin-top: -1.5%;
+  	padding-top: 9%;
+}
+.middle > * {
+  vertical-align: middle;
+}
+.left_half_viewport {
+	width: 50%;
+}
+.right_half_viewport {
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+}
+.contact_info {
+	display: inline-block;
+	color: goldenrod;
+	font-size: 2.25vw;
+	font-family: "Raleway";
+	letter-spacing: .175vw;
+	margin: 0;
+  	text-align: center;
+  	padding-left: 5%;
+    padding-bottom: 7%;
+}
+.contact_info h2 {
+	font-size: 2.25vw;
+	text-transform: uppercase;
+	padding-bottom: 1%;
+}
+hr.contact_divider { 
+    display: block;
+    width: 35%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #fff;
+    border-width: 3px;
+}
+.contact_info p {
+	font-size: 1.1vw;
+	padding: 1% 0;
+}
+i.fa {
+	color: goldenrod;
+	padding: 3% 3%;
+}
+.classes_daily_banner {
+	background-color: #b38a25;
+	display: block;
+	color: #fff;
+	font-size: 1.1vw;
+	font-family: "Raleway";
+	letter-spacing: .175vw;
+	text-transform: uppercase;
+	margin: 0;
+  	text-align: center;
+  	padding: 3% 0;
+}
+#map {
+  	height: 35vw;
+    width: 100vw;
+/*    margin-left: auto;
+    margin-right: auto;*/
+}
+.contact_info_button {
+	margin-bottom: 4%;
+    margin-top: 11%
+}
+

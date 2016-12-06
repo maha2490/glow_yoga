@@ -12,9 +12,9 @@ $(document).ready(function(){
 			$(this).next().slideToggle(); 
 			
 		});
-	// $(".dropdown").click(function(){
-	// 	$(this).toggleClass("js_nav_active_box");
-	// });
+	$(".dropdown").click(function(){
+		$(this).toggleClass("js_nav_active_box");
+	});
 
 });
 
