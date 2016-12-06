@@ -189,7 +189,7 @@ section h3.pricing_header {
   text-align: center;
 }
 .prices_boxes section table td {
-  padding: 2% 0 3% 0;
+  padding: 2% 0 1% 0;
 }
 .prices_boxes section table td.buy_now {
   color: #e7a905;
@@ -197,10 +197,14 @@ section h3.pricing_header {
   cursor: text;
 }
 table tr td.table_subheader,
+table tr td.price_breakdown,
 p.class_packages_disclaimers,
 p.new_member_disclaimers {
   font-size: 0.8vw;
   padding-top: 0;
+}
+table tr td.price_breakdown {
+  padding-bottom: 3%;
 }
 p.new_member_disclaimers {
   position: absolute;
@@ -209,9 +213,8 @@ p.new_member_disclaimers {
 }
 p.class_packages_disclaimers.first {
   position: absolute;
-  top: 37vw;
+  top: 41vw;
   left: 38vw;
-  padding-top: 1%;
   color: #7e7e7e;
 }
 /*p.class_packages_disclaimers.second {
