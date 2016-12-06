@@ -163,7 +163,7 @@ main.prices_page {
   display: inline-block;
   width: 33%;
   box-sizing: border-box;
-  padding: 2% 4%;
+  padding: 2% 2%;
   text-align: center;
 }
 .prices_boxes section.middle {
@@ -171,15 +171,15 @@ main.prices_page {
 }
 .prices_boxes section div {
    /*border: 2px solid #E7A905;*/
-   padding: 1% 2%;
+   padding: 3% 2%;
    color: #7E7E7E;
    background-color: #fff;
-   height: 15vw;
+   min-height: 17vw;
 }
 section h3.pricing_header {
   text-align: center;
   font-size: 2vw;
-  padding: 4% 0;
+  padding: 1% 0;
   font-family: 'Open Sans', sans-serif;
 }
 .prices_boxes section table {
@@ -187,15 +187,29 @@ section h3.pricing_header {
   text-align: center;
 }
 .prices_boxes section table td {
-  padding: 2% 1% 3% 1%;
+  padding: 2% 0 3% 0;
 }
 .prices_boxes section table td.buy_now {
   color: #e7a905;
   font-weight: bold;
+  cursor: text;
 }
-table tr td.table_subheader {
-
+table tr td.table_subheader,
+p.class_packages_disclaimers {
+  font-size: 0.8vw;
 }
+p.class_packages_disclaimers.first {
+  position: absolute;
+  top: 43vw;
+  left: 5vw;
+  padding-top: 1%;
+  color: #7e7e7e;
+}
+/*p.class_packages_disclaimers.second {
+  position: absolute;
+  top: 114%;
+  left: 11%;
+}*/
 .add_ons {
   color: #7E7E7E;
   padding: 3% 5%;
