@@ -102,14 +102,14 @@ main.middle {
 	letter-spacing: .175vw;
 	margin: 0;
 	text-align: center;
-/*	padding-left: 5%;*/
   padding-bottom: 7%;
 }
 .contact_info h2 {
+  font-family: 'Open Sans', sans-serif;
 	font-size: 2.25vw;
-	text-transform: uppercase;
-  color: #423C33;
-  color: #C5952C;
+	/*text-transform: uppercase;*/
+  /*color: #423C33;
+  color: #C5952C;*/
   color: #ad7f04;
   padding-top: 4%;
   padding-bottom: 1%;
@@ -130,15 +130,25 @@ hr.contact_divider {
   color: #ad7f04;
 }
 .classes_daily_banner {
-	background-color: #fff;
+	background-color: #ad7f04;;
   display: block;
-  color: #e7a905;
-  font-size: 2vw;
+  /*color: #e7a905;*/
+  color: #FFF;
   font-family: "Raleway";
   letter-spacing: .175vw;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   text-align: center;
   margin: 0;
+  padding: 3vw 9vw;
+}
+.classes_daily_banner h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5vw;
+    padding-bottom: 1%;
+}
+.classes_daily_banner p {
+   font-size: 1vw;
+   white-space: normal;
 }
 #map {
   	height: 35vw;
@@ -260,10 +270,11 @@ p.class_packages_disclaimers.first {
 
 /*schedule.html_____________________________*/
 main#schedule_embed {
-  background-color: #f9f2de;
-  margin: 5% 5%;
-  padding: 5% 0;
+  background-color: #F9F2DE;
 }
-
+div#mb_schedule {
+  margin: 0 5%;
+  padding: 2% 0;
+}
 
 
