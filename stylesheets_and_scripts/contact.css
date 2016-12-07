@@ -151,10 +151,32 @@ hr.contact_divider {
    white-space: normal;
 }
 #map {
-  	height: 35vw;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+	height: 35vw;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#legend {
+  font-family: "Raleway", sans-serif;
+  background: #fff;
+  padding: 1vw;
+  margin: 5% 1% 7% 5%;
+  border: 3px solid #7E7E7E;
+}
+#legend h3 {
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 0;
+  font-size: 1.5vw;
+  padding-bottom: 1vw;
+  color: #7E7E7E;
+}
+#legend img {
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gm-style img {
+  max-width: 2vw;
 }
 .contact_info_button {
 	margin-bottom: 4%;
