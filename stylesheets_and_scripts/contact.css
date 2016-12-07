@@ -256,7 +256,14 @@ p.class_packages_disclaimers.first {
 .add_ons p{
   padding: 1% 0;
 }
+/*pricing queries__________________*/
 
+/*schedule.html_____________________________*/
+main#schedule_embed {
+  background-color: #f9f2de;
+  margin: 5% 5%;
+  padding: 5% 0;
+}
 
 
 
