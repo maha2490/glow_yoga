@@ -214,6 +214,7 @@ main.prices_page {
   color: #7E7E7E;
   background-color: #fff;
   min-height: 9vw;
+  box-shadow: -6px 7px 26px rgba(126,126,126,0.8);
 }
 .prices_boxes section div.drop_in,
 .prices_boxes section div.new_member_special {
@@ -227,7 +228,7 @@ main.prices_page {
 }
 section h3.pricing_header {
   text-align: center;
-  font-size: 2vw;
+  font-size: 1.8vw;
   padding: 1% 0 2% 0;
   font-family: 'Open Sans', sans-serif;
 }
@@ -237,6 +238,7 @@ section h3.pricing_header {
 }
 .prices_boxes section table td {
   padding: 2% 0 1% 0;
+  font-size: 1vw;
 }
 .prices_boxes section table td.buy_now {
   color: #e7a905;
@@ -261,9 +263,7 @@ p.new_member_disclaimers {
 }
 p.class_packages_disclaimers.first {
   position: absolute;
-  /*top: 41vw;
-  left: 38vw;*/
-  top: 68vw;
+  top: 66vw;
   left: 21vw;
   color: #7e7e7e;
 }
@@ -282,7 +282,7 @@ p.class_packages_disclaimers.first {
   min-height: 9vw;
 }
 .add_ons h3 {
-  font-size: 2vw;
+  font-size: 1.8vw;
   font-family: 'Open Sans', sans-serif;
   padding: 1% 0 1% 0;
 }
@@ -293,7 +293,107 @@ p.class_packages_disclaimers.first {
 .add_ons p{
   padding: 1% 0;
 }
-/*pricing queries__________________*/
+section.glow_guidelines {
+  padding: 0 0 4% 3%;
+  color: #7E7E7E;
+}
+.guidelines_header {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2vw; 
+}
+span.glow_guidlines_font {
+  font-family: 'foxglow-regular';
+  color: #E7A905;
+  font-size: 7vw;
+  font-weight: 100;
+  padding-right: 1%;
+}
+hr.guidelines_underline {
+  color: #ad7f04;
+  border: 3px solid #fff;
+  width: 27vw;
+  margin: -1% 0 1% 1.5%;
+}
+.glow_guidelines p,
+.glow_guidelines ul {
+  line-height: 1.8vw; 
+  font-size: 1vw;
+}
+.glow_guidelines ul {
+  padding-left: 3%;
+}
+
+/*PRICING QUERIES________________*/
+
+/*annoying positioning issue*/
+@media screen and (max-width: 2050px) and (min-width: 1500px) {
+  p.class_packages_disclaimers.first {
+    top: 66vw;
+  }
+}
+@media screen and (max-width: 1265px) and (min-width: 111px) {
+  p.class_packages_disclaimers.first {
+    top: 67.5vw;
+  }
+}
+@media screen and (max-width: 811px) and (min-width: 550px) {
+  .prices_boxes section {
+    width: 32%;
+  }
+}
+@media screen and (max-width: 549px) {
+  .prices_boxes section,
+  .prices_boxes section.two_thirds {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section h3.pricing_header  {
+    font-size: 2.5vw;
+  }
+  .prices_boxes section table td {
+    font-size: 1.8vw;
+  }
+  table tr td.price_breakdown {
+    font-size: 1.2vw;
+  }
+  p.class_packages_disclaimers.first {
+    top: 72.5vw;
+    left: 38vw;
+  }
+  p.new_member_disclaimers {
+    position: absolute;
+    top: 14.5vw;
+    left: 25.5vw;
+  }
+  .prices_boxes section div.mat_towel {
+    position: static;
+    top: 7vw;
+  }
+  section.glow_guidelines {
+    padding: 6% 0 4% 12%;
+  }
+  .glow_guidelines p,
+  .glow_guidelines ul {
+    font-size: 1.8vw;
+    line-height: 2.5vw;
+  }
+  hr.guidelines_underline {
+    border: 2px solid #fff;
+    width: 27vw;
+    margin: -1% 0 1% 1.5%;
+  }
+}
+@media screen and (max-width: 400px) {
+  p.class_packages_disclaimers.first {
+    top: 74.5vw;
+    left: 38vw;
+  }
+  section.glow_guidelines {
+    padding: 0% 0 5% 12%;
+  }
+}
 
 /*schedule.html_____________________________*/
 main#schedule_embed {
