@@ -21,19 +21,15 @@ $(document).ready(function(){
 var map;
   function initMap() {
 
-  	var uluru = {lat: 25.789, lng: -80.140};
-	// var map = new google.maps.Map(document.getElementById('map'), {
-	// 	zoom: 16,
-	// 	center: uluru
-	// });
+  	var glow_yoga = {lat: 25.789, lng: -80.140};
 
-	var marker = new google.maps.Marker({
-		position: uluru,
-		map: map
-	})
+  	var marker = new google.maps.Marker({
+  		position: glow_yoga,
+  		map: map
+  	})
     map = new google.maps.Map(document.getElementById('map'), {
       zoom: 16,
-      center: uluru,
+      center: glow_yoga,
       mapTypeId: 'roadmap'
     });
 

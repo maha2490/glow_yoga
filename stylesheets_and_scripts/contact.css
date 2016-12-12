@@ -275,6 +275,11 @@ p.class_packages_disclaimers.first {
 .add_ons {
   color: #7E7E7E;
   padding: 3% 2%;
+  border: 2px solid #E7A905;
+  padding: 3% 2% 6% 2%;
+  color: #7E7E7E;
+  background-color: #fff;
+  min-height: 9vw;
 }
 .add_ons h3 {
   font-size: 2vw;
