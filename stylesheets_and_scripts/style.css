@@ -465,7 +465,7 @@ footer h6 a:hover{
 }
 
 #faq_left{
-	padding-top: 5%;
+	padding-top: 3.75%;
 	width: 60%;
 	float: left;
 	box-sizing: border-box;
@@ -473,13 +473,14 @@ footer h6 a:hover{
 
 #faq_left h3{
 	box-sizing: border-box;
+	font-size: 1.3vw;
 	text-align: center;
 	width: 80%;
 	margin: .5% 5% 0% 15%;
 	padding:1.75% 0% 1.75% 0%;
 	color: #434343;
 	background-color: rgb(216, 182, 106);
-	text-transform: lowercase;
+	/*text-transform: lowercase;*/
     letter-spacing: 0.2vw;
     font-family: "Open Sans";
 
@@ -491,6 +492,7 @@ footer h6 a:hover{
 
 #faq_left p{
 	box-sizing: border-box;
+	font-size: 1.2vw;
 	width: 80%;
 	margin: 0% 5% 0% 15%;
 	padding: 0% 5% 2% 5%;
@@ -734,7 +736,20 @@ footer h6 a:hover{
 	color: #ad7f04;
 	font-weight: bold;
 	font-size: 2.35vw;
+}
 
+#styles_page h4{
+	font-family: "Dancing Script";
+	text-transform: lowercase;
+	/*color: #4e4e4f;*/
+	/*color: #d3b332;*/
+	color: #b2972a;
+	font-size: 1.75vw;
+	padding-bottom: .5vh;
+}
+
+#styles_page h4 span{
+	font-size: 1.5vw;
 }
 
 #styles_page p{
