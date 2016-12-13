@@ -462,7 +462,7 @@ footer h6 a:hover{
 
 #faq_right img{
 	width: 27.5vw;
-	padding-top: 5%;
+	padding-top: 8%;
 	height: auto;
 	margin: 0 auto;
 }
@@ -476,17 +476,16 @@ footer h6 a:hover{
 
 #faq_left h3{
 	box-sizing: border-box;
-	font-size: 1.3vw;
+	font-size: 1.5vw;
 	text-align: center;
 	width: 80%;
 	margin: .5% 5% 0% 15%;
 	padding:1.75% 0% 1.75% 0%;
-	color: #434343;
+	color: #7E7E7E;
 	background-color: rgb(216, 182, 106);
 	/*text-transform: lowercase;*/
     letter-spacing: 0.2vw;
     font-family: "Open Sans";
-
 }
 
 #faq_left h3:hover{
@@ -498,8 +497,8 @@ footer h6 a:hover{
 	font-size: 1.2vw;
 	width: 80%;
 	margin: 0% 5% 0% 15%;
-	padding: 0% 5% 2% 5%;
-	color: #434343;
+	padding: 1% 5% 3% 5%;
+	color: #7e7e7e;
 	background-color: #cccac7;
 	text-align: justify;
 	font-family: "Raleway";
