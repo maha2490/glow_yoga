@@ -396,10 +396,12 @@ hr.guidelines_underline {
 }
 
 /*schedule.html_____________________________*/
-main#schedule_embed {
+main#schedule_embed,
+main#events_embed {
   background-color: #F9F2DE;
 }
-div#mb_schedule {
+div#mb_schedule,
+div#mb_events {
   margin: 0 5%;
   padding: 2% 0;
 }
