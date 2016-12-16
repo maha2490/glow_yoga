@@ -807,12 +807,13 @@ footer h6 a:hover{
 	box-sizing: border-box;
 }
 
+
 .instructor .instructor_bio p{
 	padding: 1.5% 10% 5% 0%;
 }
 
 .instructor_2 .instructor_bio p{
-	padding: 1.5% 0% 5% 10%;
+	padding: 1.5% 40% 5% 10%;
 }
 
 /***********  END FAMILY.HTML  ***********/
@@ -1174,7 +1175,7 @@ footer h6 a:hover{
 	}
 
 	#styles_page p{
-		font-size: 3.75vw;
+		font-size: 4vw;
 	}
 
 	#styles_page{
@@ -1184,6 +1185,22 @@ footer h6 a:hover{
 }	
 
 /*-*-*-*-*-*  END STYLES.HTML MEDIA QUERIES *-*-*-*-*-*/
+
+/*-*-*-*-*-*  START SPACE.HTML MEDIA QUERIES *-*-*-*-*-*/
+
+@media screen and (max-width: 420px){
+
+	#space_intro h3{
+		font-size: 5.75vw;
+	}
+
+	#space_intro p{
+		font-size: 5vw;
+    	line-height: 120%;
+	}
+}
+
+/*-*-*-*-*-*  END SPACE.HTML MEDIA QUERIES *-*-*-*-*-*/
 
 /*-*-*-*-*-*  START FAQ.HTML MEDIA QUERIES *-*-*-*-*-*/
 
@@ -1209,7 +1226,8 @@ footer h6 a:hover{
 	#faq_left p{
 		width: 100%;
 		margin: 0 auto;
-		font-size: 3.75vw;
+		font-size: 4.25vw;
+		padding-top: 3%;
 	}
 
 }
