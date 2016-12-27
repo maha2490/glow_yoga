@@ -38,6 +38,11 @@ a{
 }
 
 /*EVERYTHING ELSE_________________________________________*/
+
+.full_header_nav{
+	visibility: visible;
+}
+
 header{
 	background:rgba(255,255,255, 0.65);
 	padding-top: 2%;
@@ -250,9 +255,220 @@ nav ul li a{
 
 /***********  End Dropdown Nav Style  ***********/
 
-/*section{
-	background-color: white;
-}*/
+/**-*-*-*-*-*  START MOBILE HEADER/NAV STYLING  *-*-*-*-*-**/
+
+.mobile_header_nav{
+	display: none;
+}
+
+header #hamburger_nav{
+  box-sizing: border-box;
+  width: 25%;
+  float: left;
+}
+
+header #hamburger_nav{
+  color: #cdcdcd;
+  font-family: "Open Sans", "Avenir", sans-serif;
+}
+
+header #hamburger_nav a{
+  text-decoration: none;
+  color: #7e7e7e;
+  text-transform: lowercase;
+  transition: color 0.3s ease;
+}
+
+header #hamburger_nav a .glow_hamburger{
+	font-family: "Dancing Script";
+	color: #ad7f04;
+	font-size: 10vw;
+}
+
+header #hamburger_nav a:hover{
+  color: #ad7f04;
+}
+
+header #hamburger_nav #menuToggle{
+  display: block;
+  position: relative;
+  top: 35px;
+  left: 8vw;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+header #hamburger_nav #menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+ 
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+header #hamburger_nav #menuToggle .burger_line
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #ad7f04;
+  /*background: silver;*/
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+header #hamburger_nav #menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+header #hamburger_nav #menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/*transform hamburger to X*/
+
+header #hamburger_nav #menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #7e7e7e;
+}
+
+/*hide middle line of hamburger menu*/
+
+header #hamburger_nav #menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+header #hamburger_nav #menuToggle input:checked ~ span:nth-last-child(2)
+{
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+header #hamburger_nav #menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -75px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+header #hamburger_nav #menu li{
+  padding: 2.5% 0 2.5% 5%;
+  font-size: 7.25vw;
+}
+
+/*
+ * And let's fade it in from the left
+ */
+header #hamburger_nav #menuToggle input:checked ~ ul{
+  transform: scale(1.0, 1.0);
+  opacity: 1;
+}
+
+header #header_text{
+  box-sizing: border-box;
+  width: 75%;
+  float: right;
+}
+
+#header_text #text_left{
+  box-sizing: border-box;
+  width: 75%;
+  float: left;
+}
+
+#text_left #tl_top{
+  box-sizing: border-box;
+}
+
+
+#text_left #tl_top img{
+  display: inline-block;
+}
+
+#tl_top .left{
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+}
+
+#tl_top .right{
+  box-sizing: border-box;
+  width: 50%;
+  float: right;
+}
+
+#mh_glow{
+    width: 28.5vw;
+    height: auto;
+    padding-top: 8%;
+}
+
+#mh_hotyoga{
+    width: 40vw;
+    height: auto;
+    padding-top: 30%;
+    padding-left: 7%;
+}
+
+#mh_phone{
+    position: absolute;
+    top: 10vh;
+    right: 2vw;
+    width: 65%;
+    float: right;
+}
+
+/**-*-*-*-*-*  END MOBILE HEADER/NAV STYLING  *-*-*-*-*-**/
 
 #slider{
 	padding-top: 1%;
@@ -269,6 +485,10 @@ nav ul li a{
 }
 #welcome_message{
 	padding: 7.5%;
+}
+
+#welcome_message #hidden_lotus{
+	display: none;
 }
 
 #welcome_message .welcome_font{
@@ -587,12 +807,13 @@ footer h6 a:hover{
 	box-sizing: border-box;
 }
 
+
 .instructor .instructor_bio p{
 	padding: 1.5% 10% 5% 0%;
 }
 
 .instructor_2 .instructor_bio p{
-	padding: 1.5% 0% 5% 10%;
+	padding: 1.5% 40% 5% 10%;
 }
 
 /***********  END FAMILY.HTML  ***********/
@@ -803,3 +1024,214 @@ footer h6 a:hover{
 }
 
 /***********  END STYLES.HTML  ***********/
+
+/*--MEDIA QUERIES--MEDIA QUERIES--MEDIA QUERIES--MEDIA QUERIES--MEDIA QUERIES*/
+/*--MEDIA QUERIES--MEDIA QUERIES--MEDIA QUERIES--MEDIA QUERIES--MEDIA QUERIES*/
+/*--MEDIA QUERIES--MEDIA QUERIES--MEDIA QUERIES--MEDIA QUERIES--MEDIA QUERIES*/
+/*--MEDIA QUERIES--MEDIA QUERIES--MEDIA QUERIES--MEDIA QUERIES--MEDIA QUERIES*/
+/*--MEDIA QUERIES--MEDIA QUERIES--MEDIA QUERIES--MEDIA QUERIES--MEDIA QUERIES*/
+
+
+/*-*-*-*-*-*  START INDEX.HTML MEDIA QUERIES *-*-*-*-*-*/
+
+@media screen and (max-width: 420px){
+
+    .full_header_nav{
+        display: none;
+    }
+
+    #slider{
+    	display: none;
+    }
+
+    .mobile_header_nav{
+        display: block;
+        margin-bottom: 111px;
+    }
+
+	.mobile_header_nav #menu li{
+		padding: 2.5% 0 2.5% 5%;
+  		font-size: 7.25vw;
+  		list-style: none;
+  		width: 100%;
+  		float: none;
+	}
+
+	#welcome_message #hidden_lotus{
+	display: block;
+	padding-bottom: 3.5%;
+	}
+
+	#welcome_message #hidden_lotus img{
+	width: 80vw;
+	height: auto;
+	margin: 0 auto;
+	}
+
+	#welcome_message h3{
+		font-size: 5.5vw;
+		padding-bottom: 5.5%;
+	}
+
+	#welcome_message h3 #welcome_font_h3{
+		font-size: 16.5vw;
+		padding-left: 1.1%;
+	}
+
+	#welcome_message p{
+		font-size: 4.5vw;
+		line-height: 3.5vh;
+	}
+
+	#welcome_message .welcome_font{
+		font-size: 11vw;
+		padding-left: 1%;
+	}
+
+	#welcome_message h4{
+		font-size: 4vw;
+	}
+
+	#welcome_message h4 span{
+		font-size: 4.25vw;
+	}
+
+	#boxes .box .boxes_bottom h4{
+		font-size: 2.7vw;
+	}
+
+	footer{
+		padding-top: 4.5%;
+	}
+
+	footer #footer_left{
+		width: 100%;
+		float: none;
+	}
+
+	footer #footer_left i{
+		font-size: 5vw;
+	}
+
+	footer #footer_left #i_center{
+		padding-left: 25%;
+    	padding-right: 30%;
+	}
+
+	footer #footer_center{
+		width: 100%;
+		float: none;
+		padding-top: 3.5%;
+	}
+
+	footer #footer_center h5{
+		font-size: 4vw;
+	}
+
+	footer #footer_right{
+		display: none;
+	}
+
+	footer h6{
+		text-align: center;
+		font-size: 2.25vw;
+	}
+
+}
+
+/*-*-*-*-*-*  END INDEX.HTML MEDIA QUERIES *-*-*-*-*-*/
+
+/*-*-*-*-*-*  START STYLES.HTML MEDIA QUERIES *-*-*-*-*-*/
+
+@media screen and (max-width: 420px){
+
+	.styles_img_top, .styles_img_bottom{
+		display: none;
+	}
+
+	#styles_page #styles_top .styles_desc_top{
+		width: 100%;
+		float: none;
+		padding-right: 5.5%;
+	} 
+
+	#styles_bottom .styles_desc_bottom{
+		width: 100%;
+		float: none;
+		padding-left: 5.5%;
+	}
+
+	#styles_page h3{
+		font-size: 7.5vw;
+    	padding-top: 2vh;
+	}
+
+	#styles_page h4{
+		font-size: 6vw;
+	}
+
+	#styles_page h4 span {
+    font-size: 4.5vw;
+	}
+
+	#styles_page p{
+		font-size: 4vw;
+	}
+
+	#styles_page{
+		padding-bottom: 7.5%;
+	}
+
+}	
+
+/*-*-*-*-*-*  END STYLES.HTML MEDIA QUERIES *-*-*-*-*-*/
+
+/*-*-*-*-*-*  START SPACE.HTML MEDIA QUERIES *-*-*-*-*-*/
+
+@media screen and (max-width: 420px){
+
+	#space_intro h3{
+		font-size: 5.75vw;
+	}
+
+	#space_intro p{
+		font-size: 5vw;
+    	line-height: 120%;
+	}
+}
+
+/*-*-*-*-*-*  END SPACE.HTML MEDIA QUERIES *-*-*-*-*-*/
+
+/*-*-*-*-*-*  START FAQ.HTML MEDIA QUERIES *-*-*-*-*-*/
+
+@media screen and (max-width: 420px){
+
+	#faq_right{
+		display: none;
+	}
+
+	#faq_left{
+		width: 100%;
+		float: none;
+		padding: 5%;
+	}
+
+	#faq_left h3{
+		width: 100%;
+		margin: 1.5% auto;
+		font-size: 4.75vw;
+
+	}
+
+	#faq_left p{
+		width: 100%;
+		margin: 0 auto;
+		font-size: 4.25vw;
+		padding-top: 3%;
+	}
+
+}
+
+/*-*-*-*-*-*  END FAQ.HTML MEDIA QUERIES *-*-*-*-*-*/
+
+
