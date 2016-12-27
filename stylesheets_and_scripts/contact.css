@@ -338,12 +338,23 @@ hr.guidelines_underline {
     top: 67.5vw;
   }
 }
-@media screen and (max-width: 811px) and (min-width: 550px) {
+@media screen and (max-width: 811px) and (min-width: 734px) {
   .prices_boxes section {
     width: 32%;
   }
+  hr.guidelines_underline {
+    border: 1px solid #fff;
+  }
 }
-@media screen and (max-width: 549px) {
+/*@media screen and (max-width: 733px) and (min-width: 550px) {
+  .prices_boxes section {
+    width: 32%;
+  }
+  hr.guidelines_underline {
+    border: 1px solid #fff;
+  }
+}*/
+@media screen and (max-width: 733px) {
   .prices_boxes section,
   .prices_boxes section.two_thirds {
     width: 80%;
@@ -361,7 +372,7 @@ hr.guidelines_underline {
     font-size: 1.2vw;
   }
   p.class_packages_disclaimers.first {
-    top: 72.5vw;
+    top: 71.5vw;
     left: 38vw;
   }
   p.new_member_disclaimers {
@@ -374,7 +385,7 @@ hr.guidelines_underline {
     top: 7vw;
   }
   section.glow_guidelines {
-    padding: 6% 0 4% 12%;
+    padding: 0% 0 5% 12%;
   }
   .glow_guidelines p,
   .glow_guidelines ul {
@@ -387,13 +398,84 @@ hr.guidelines_underline {
     margin: -1% 0 1% 1.5%;
   }
 }
-@media screen and (max-width: 400px) {
-  p.class_packages_disclaimers.first {
-    top: 74.5vw;
-    left: 38vw;
+@media screen and (max-width: 420px){
+  .prices_boxes section,
+  .prices_boxes section.two_thirds {
+    width: 92%;
   }
-  section.glow_guidelines {
-    padding: 0% 0 5% 12%;
+  section h3.pricing_header {
+    font-size: 4vw;
+  }
+  .prices_boxes section table td {
+    font-size: 2.5vw;
+  }
+  p.class_packages_disclaimers,
+  p.new_member_disclaimers,
+  table tr td.price_breakdown {
+    font-size: 1.5vw;
+  }
+  p.class_packages_disclaimers.first {
+    top: 96.5vw;
+    left: 28vw;
+  }
+  p.new_member_disclaimers {
+    position: absolute;
+    top: 17.5vw;
+    left: 21.5vw;
+  }
+  hr.guidelines_underline {
+    border: 1px solid #fff;
+    width: 27vw;
+    margin: -1% 0 1% 1.5%;
+  }
+}
+@media screen and (max-width: 390px){
+  section h3.pricing_header,
+  .guidelines_header {
+    font-size: 4.3vw;
+  }
+  span.glow_guidlines_font {
+    font-size: 13vw;
+  }
+  .prices_boxes section table td {
+    font-size: 3.3vw;
+  }
+  p.class_packages_disclaimers.first {
+    top: 103.5vw;
+    left: 24vw;
+  }
+  p.new_member_disclaimers {
+    position: absolute;
+    top: 18vw;
+    left: 18.5vw;
+  }
+  p.class_packages_disclaimers,
+  p.new_member_disclaimers,
+  table tr td.price_breakdown {
+    font-size: 1.8vw;
+  }
+  hr.guidelines_underline {
+    width: 31vw;
+    margin: -1% 4% 1% 3.5%;
+  }
+  .glow_guidelines p, .glow_guidelines ul {
+    font-size: 2.3vw;
+    line-height: 3.1vw;
+  }
+}
+@media screen and (max-width: 375px) {
+  p.class_packages_disclaimers.first {
+      top: 107.5vw;
+  }
+}
+@media screen and (max-width: 359px) {
+  p.class_packages_disclaimers.first {
+      top: 105.5vw;
+  }
+}
+@media screen and (max-width: 344px) {
+  p.class_packages_disclaimers.first {
+      top: 108.5vw;
   }
 }
 
