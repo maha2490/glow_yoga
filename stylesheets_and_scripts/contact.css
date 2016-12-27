@@ -194,7 +194,7 @@ main.prices_page {
   font-family: 'Raleway', sans-serif;
 }
 .prices_boxes {
-  padding: 3% 0;
+  padding: 2% 0;
 }
 .prices_boxes section {
   display: inline-block;
@@ -226,7 +226,7 @@ main.prices_page {
 }
 .prices_boxes section div.mat_towel {
   position: relative;
-  top: 7vw;
+  top: -1.2vw;
 }
 section h3.pricing_header {
   text-align: center;
