@@ -250,9 +250,19 @@ section h3.pricing_header {
 table tr td.table_subheader,
 table tr td.price_breakdown,
 p.class_packages_disclaimers,
-p.new_member_disclaimers {
+p.new_member_disclaimers,
+p.yearly_disclaimer {
   font-size: 0.8vw;
   padding-top: 0;
+}
+.prices_boxes section table td.unlimited_price_breakdown {
+  padding: 2% 1% 1% 0;
+  font-size: 0.8vw;
+}
+p.yearly_disclaimer {
+  position: absolute;
+  top: 36vw;
+  left: 43vw;
 }
 table tr td.price_breakdown {
   /*padding-bottom: 3%;*/
@@ -265,15 +275,10 @@ p.new_member_disclaimers {
 }
 p.class_packages_disclaimers.first {
   position: absolute;
-  top: 66vw;
+  top: 68vw;
   left: 21vw;
   color: #7e7e7e;
 }
-/*p.class_packages_disclaimers.second {
-  position: absolute;
-  top: 114%;
-  left: 11%;
-}*/
 .add_ons {
   color: #7E7E7E;
   padding: 3% 2%;
@@ -333,9 +338,21 @@ hr.guidelines_underline {
     top: 66vw;
   }
 }
+@media screen and (max-width: 2000px) and (min-width: 845px) {
+  p.yearly_disclaimer {
+    top: 36vw;
+  }
+}
+@media screen and (max-width: 844px) and (min-width: 734px) {
+  p.yearly_disclaimer {
+    top: 36vw;
+    left: 43vw;
+  }
+}
 @media screen and (max-width: 1265px) and (min-width: 111px) {
   p.class_packages_disclaimers.first {
     top: 67.5vw;
+    left: 22vw;
   }
 }
 @media screen and (max-width: 811px) and (min-width: 734px) {
@@ -346,14 +363,8 @@ hr.guidelines_underline {
     border: 1px solid #fff;
   }
 }
-/*@media screen and (max-width: 733px) and (min-width: 550px) {
-  .prices_boxes section {
-    width: 32%;
-  }
-  hr.guidelines_underline {
-    border: 1px solid #fff;
-  }
-}*/
+/*______________________________*/
+
 @media screen and (max-width: 733px) {
   .prices_boxes section,
   .prices_boxes section.two_thirds {
@@ -372,7 +383,7 @@ hr.guidelines_underline {
     font-size: 1.2vw;
   }
   p.class_packages_disclaimers.first {
-    top: 71.5vw;
+    top: 143.5vw;
     left: 38vw;
   }
   p.new_member_disclaimers {
@@ -397,6 +408,16 @@ hr.guidelines_underline {
     width: 27vw;
     margin: -1% 0 1% 1.5%;
   }
+   p.yearly_disclaimer {
+    top: 42vw;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 420px) {
+  p.class_packages_disclaimers.first {
+      top: 147.5vw;
+      left: 38vw;
+  }
 }
 @media screen and (max-width: 420px){
   .prices_boxes section,
@@ -411,11 +432,12 @@ hr.guidelines_underline {
   }
   p.class_packages_disclaimers,
   p.new_member_disclaimers,
-  table tr td.price_breakdown {
+  table tr td.price_breakdown,
+  p.yearly_disclaimer {
     font-size: 1.5vw;
   }
   p.class_packages_disclaimers.first {
-    top: 96.5vw;
+    top: 185.5vw;
     left: 28vw;
   }
   p.new_member_disclaimers {
@@ -427,6 +449,10 @@ hr.guidelines_underline {
     border: 1px solid #fff;
     width: 27vw;
     margin: -1% 0 1% 1.5%;
+  }
+  p.yearly_disclaimer {
+    top: 104.5vw;
+    left: 38vw;
   }
 }
 @media screen and (max-width: 390px){
@@ -441,7 +467,7 @@ hr.guidelines_underline {
     font-size: 3.3vw;
   }
   p.class_packages_disclaimers.first {
-    top: 103.5vw;
+    top: 199.5vw;
     left: 24vw;
   }
   p.new_member_disclaimers {
@@ -451,7 +477,8 @@ hr.guidelines_underline {
   }
   p.class_packages_disclaimers,
   p.new_member_disclaimers,
-  table tr td.price_breakdown {
+  table tr td.price_breakdown,
+  p.yearly_disclaimer {
     font-size: 1.8vw;
   }
   hr.guidelines_underline {
@@ -462,20 +489,34 @@ hr.guidelines_underline {
     font-size: 2.3vw;
     line-height: 3.1vw;
   }
+  p.yearly_disclaimer {
+    top: 112vw;
+    left: 38vw;
+  }
 }
 @media screen and (max-width: 375px) {
+  p.yearly_disclaimer {
+    top: 113vw;
+    left: 35vw;
+  }
   p.class_packages_disclaimers.first {
-      top: 107.5vw;
+    top: 203.5vw;
+  }
+  .prices_boxes section div {
+    box-shadow: 0px 4px 14px rgba(126,126,126,0.8);
   }
 }
 @media screen and (max-width: 359px) {
   p.class_packages_disclaimers.first {
-      top: 105.5vw;
+      top: 199.5vw;
   }
 }
 @media screen and (max-width: 344px) {
   p.class_packages_disclaimers.first {
-      top: 108.5vw;
+      top: 204.5vw;
+  } 
+  p.yearly_disclaimer{
+    top: 116vw;
   }
 }
 
