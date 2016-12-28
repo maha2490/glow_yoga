@@ -71,6 +71,38 @@ button.standard:active {
     margin-left: 13.5%;
 }
 
+/*NEW BUTTON STYLE??*/
+.animate {
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+}
+.action-button {
+  position: relative;
+  padding: 2% 4%;
+  margin: 0px 10px 10px 0px;
+  float: left;
+  border-radius: 10px;
+  font-family: "Raleway";
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .175vw;
+  font-size: 1.2vw;
+  color: #FFF;
+  text-decoration: none;  
+}
+.color {
+  background-color: #73BFB8;
+  border-bottom: 5px solid #4eaaa1;
+  text-shadow: 0px -2px #4eaaa1;
+}
+.action-button:active {
+  transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+  border-bottom: 1px solid;
+}
+
+
+
 /*__________________________________*/
 main.middle {
   white-space: nowrap;
@@ -78,7 +110,7 @@ main.middle {
   background-color: rgba(246,235,205,0.7);*/
   background-color: #f9f2de;
   margin-top: -1.5%;
-  padding-top: 6%;
+  padding-top: 4%;
 }
 .middle > * {
   vertical-align: middle;
@@ -108,9 +140,8 @@ main.middle {
   font-family: 'Open Sans', sans-serif;
 	font-size: 2.25vw;
 	/*text-transform: uppercase;*/
-  /*color: #423C33;
-  color: #C5952C;*/
-  color: #ad7f04;
+/*  color: #ad7f04;*/
+  color: #7E7E7E;
   padding-top: 4%;
   padding-bottom: 1%;
 }
@@ -128,7 +159,8 @@ hr.contact_divider {
 	font-size: 1.1vw;
   line-height: 188%;
 	padding: 1% 0;
-  color: #ad7f04;
+  /*color: #ad7f04;*/
+  color: #7E7E7E;
 }
 .classes_daily_banner {
 	background-color: #ad7f04;
@@ -137,9 +169,10 @@ hr.contact_divider {
   font-family: "Raleway";
   letter-spacing: .175vw;
   text-align: center;
-  margin: 0;
-  width: 53vw;
+  width: 44vw;
   margin-top: 4%;
+  margin-right: auto;
+  margin-left: auto;
 }
 .classes_daily_banner h3 {
     font-family: 'Open Sans', sans-serif;
@@ -147,11 +180,17 @@ hr.contact_divider {
     padding-bottom: 1%;
 }
 .classes_daily_banner p {
-  font-size: 1vw;
+  font-size: 0.8vw;
   line-height: 134%;
   white-space: normal;
   color: #FFF;
   padding: 3% 6% 3% 3%;
+  /*border: 2px solid #E7A905;*/
+/*  border: 2px solid #ffffff;*/
+  color: #7E7E7E;
+  background-color: #fff;
+/*  min-height: 9vw;*/
+  box-shadow: -6px 7px 26px rgba(126,126,126,0.8);
 }
 #map {
 	height: 35vw;
@@ -184,10 +223,101 @@ hr.contact_divider {
 .contact_info_button,
 .find_class_button {
   display: inline-block;
-  margin: 8% 3% 2% 3%;
+  margin: 7% 3% 2% 3%;
 }
-
-
+div.contact_info_buttons {
+  display: block;
+  margin-left: 19%; 
+}
+/*contact queries _____________________________*/
+@media screen and (max-width: 800px) {
+  .contact_info p {
+    font-size: 1.4vw;
+  }
+  .classes_daily_banner p {
+    font-size: 1vw;
+  }
+  hr.contact_divider {
+    border-width: 2px;
+  }
+  .color {
+    border-bottom: 2px solid #4eaaa1;
+  }
+  .action-button {
+    padding: 2.5% 4.5%;
+  }
+}
+@media screen and (max-width: 629px) and (min-width: 200px) {
+ .left_half_viewport, 
+ .right_half_viewport {
+    display: block;
+    width: 100%;
+    padding-bottom: 6%;
+  }
+  .contact_info h2 {
+      padding-top: 1%;
+  }
+  .action-button {
+    padding: 2% 3%;
+  }
+  div.contact_info_buttons {
+    margin-left: 30%;
+  }
+  .classes_daily_banner {
+    width: 59vw;
+    margin-top: 1%;
+  }
+  .classes_daily_banner p {
+    box-shadow: -3px 5px 11px rgba(126,126,126,0.8);
+  }
+  .contact_info_button, .find_class_button {
+    margin: 4% 3% 6% 3%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .contact_info h2 {
+    font-size: 4vw;
+  }
+  .contact_info p {
+    font-size: 2.5vw;
+  }
+  .classes_daily_banner {
+    width: 90vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .classes_daily_banner p {
+    font-size: 2vw;
+  }
+  .classes_daily_banner p {
+    box-shadow: -3px 3px 9px rgba(126,126,126,0.8);
+  }
+  .action-button {
+    font-size: 2vw;
+  }
+  div.contact_info_buttons {
+    margin-left: 8%;
+    margin-bottom: 15%;
+  }
+  #map {
+    height: 75vw;
+  }
+  .action-button {
+    font-size: 2.7vw;
+    padding: 3% 9%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .contact_info h2 {
+    font-size: 4.3vw;
+  }
+  .contact_info p {
+    font-size: 2.8vw;
+  }
+  .classes_daily_banner p {
+    font-size: 2.2vw;
+  }
+}
 /*pricing.html_____________________________*/
 main.prices_page {
   background-color: #F9F2DE;

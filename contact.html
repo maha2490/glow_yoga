@@ -5,8 +5,7 @@
 	<meta charset="utf-8"/>
 	<meta name="viewport" content ="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/png" href="assets/glow_favicon.png" sizes="16x16" />
-	<title>Glow Yoga Schedule</title>
-
+	<title>Contact Glow Yoga</title>
 	<link rel="stylesheet" href="stylesheets_and_scripts/style.css"/>
 	<link rel="stylesheet" href="stylesheets_and_scripts/contact.css"/>
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
@@ -20,7 +19,6 @@
 	<div id="container" class="clearfix">
 
 <!-- **********  START FULL HEADER_NAV  ********** -->
-
 	<div class="full_header_nav">	
 
 		<header class="clearfix">
@@ -112,33 +110,18 @@
 <!-- **********  END FULL HEADER_NAV  ********** -->
 
 <!-- *-*-*-*-*-*  START MOBILE HEADER_NAV  *-*-*-*-*-* -->
-
 	<div class="mobile_header_nav">
-
 		<header>
-
         <div id="hamburger_nav">
 
           <nav role="navigation">
             <div id="menuToggle">
-              <!--
-              A fake / hidden checkbox is used as click reciever,
-              so you can use the :checked selector on it.
-              -->
-              <input type="checkbox" />
-              
+              <input type="checkbox" />              
               <!-- hamburger lines -->
-
               <span class="burger_line"></span>
               <span class="burger_line"></span>
               <span class="burger_line"></span>
-              
-              <!--
-              Too bad the menu has to be inside of the button
-              but hey, it's pure CSS magic.
-              -->
               <ul id="menu">
-
                 <a href="index.html"><li>Home</li></a>
                 <a href="schedule.html"><li>Schedule</li></a>
                 <a href="prices.html"><li>Prices</li></a>
@@ -148,50 +131,34 @@
                 <a href="faq.html"><li>FAQ</li></a>
                 <a href="events.html"><li>Events</li></a>
                 <a href="contact.html"><li>Contact</li></a>
-
               </ul>
             </div>
           </nav>
-
         </div>  <!-- end hamburger_nav  --> 
-
         <div id="header_text" class="clearfix">
-
           <section id="text_left">
-
             <div id="tl_top" class="clearfix">
-
               <section class="left">
                 <img id="mh_glow" src="assets/separated_glow_optimized.png" alt="">
               </section>
-              
               <section class="right"> 
                 <img id="mh_hotyoga" src="assets/separated_hotyoga_optimized.png" alt="">
               </section>  
-
             </div>
-
             <div id="mh_phone">
-
               <a href="tel:3055342727">
                 <img src="assets/phone_number.png" alt="">
               </a> 
-
             </div>
-
           </section>
-
         </div>  <!-- end header_text -->
-		
       </header>
-
 	</div>  <!-- end mobile header/nav -->	
 
 
 <!-- *-*-*-*-*-*  END MOBILE HEADER_NAV  *-*-*-*-*-* -->
 
 <!-- **********  START CONTACT.HTML  ********** -->
-
 		<main class="middle">
 			<div class="contact_info left_half_viewport">
 				<h2>Location & Parking</h2>
@@ -204,13 +171,16 @@
 					<p>There is ample parking around the Glow studio. Meter spaces are available on 16th Street directly in front of the studio. Resdiental parking is open for public use 7am - 6pm Monday through Friday. There are two public lots marked above on the map. Free street parking until 9am 7 days a week.
 					</p>
 				</div>
-				
-					<a href="mailto:info@glow-hotyoga.com"><button class="standard contact_info_button">get in touch</button></a>
-					<a href="schedule.html"><button class="standard find_class_button">find a class</button></a>
+					<!-- <a href="mailto:info@glow-hotyoga.com"><button class="standard contact_info_button">get in touch</button></a>
+					<a href="schedule.html"><button class="standard find_class_button">find a class</button></a> -->
+				<div class="contact_info_buttons">
+					<a href="mailto:info@glow-hotyoga.com"><button class="action-button shadow animate color find_class_button">get in touch</button></a>
+					<a href="schedule.html"><button class="action-button shadow animate color find_class_button">find a class</button></a>
+				</div>
 			</div>
 			<div class="right_half_viewport">
 				<div id="map"></div>
-				<div id="legend"><h3>Legend</h3></div>	
+				<div id="legend"><h3>Legend</h3></div>
 			</div>
 		</main>
 
@@ -239,5 +209,9 @@
 			<h6>© 2016 Glow Hot Yoga, All Rights Reserved | designed and built by <a href="http://www.glynnwebsolutions.com">glynnwebsolutions.com</a> with <a href="http://byrachelmahan.com/">byrachelmahan.com</a></h6>
 		</footer>
 	</div> <!-- end container -->
+	<!-- DO NOT DELETE BELOW SCRIPT TAG, IMPORTANT FOR GOOGLE MAPS -->
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3dLmvuLKCUTjD2EhBoZtOu_meMX5-lkY&callback=initMap">
+    </script>
 </body>
 </html>
