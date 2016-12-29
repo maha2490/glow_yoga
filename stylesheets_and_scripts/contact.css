@@ -71,6 +71,38 @@ button.standard:active {
     margin-left: 13.5%;
 }
 
+/*NEW BUTTON STYLE??*/
+.animate {
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+}
+.action-button {
+  position: relative;
+  padding: 2% 4%;
+  margin: 0px 10px 10px 0px;
+  float: left;
+  border-radius: 10px;
+  font-family: "Raleway";
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .175vw;
+  font-size: 1.2vw;
+  color: #FFF;
+  text-decoration: none;  
+}
+.color {
+  background-color: #73BFB8;
+  border-bottom: 5px solid #4eaaa1;
+  text-shadow: 0px -2px #4eaaa1;
+}
+.action-button:active {
+  transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+  border-bottom: 1px solid;
+}
+
+
+
 /*__________________________________*/
 main.middle {
   white-space: nowrap;
@@ -78,7 +110,7 @@ main.middle {
   background-color: rgba(246,235,205,0.7);*/
   background-color: #f9f2de;
   margin-top: -1.5%;
-  padding-top: 6%;
+  padding-top: 4%;
 }
 .middle > * {
   vertical-align: middle;
@@ -108,17 +140,16 @@ main.middle {
   font-family: 'Open Sans', sans-serif;
 	font-size: 2.25vw;
 	/*text-transform: uppercase;*/
-  /*color: #423C33;
-  color: #C5952C;*/
-  color: #ad7f04;
+/*  color: #ad7f04;*/
+  color: #7E7E7E;
   padding-top: 4%;
   padding-bottom: 1%;
 }
 hr.contact_divider { 
   display: block;
-  width: 35%;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  width: 41%;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
   margin-left: auto;
   margin-right: auto;
   border: 2px solid #fff;
@@ -126,20 +157,22 @@ hr.contact_divider {
 }
 .contact_info p {
 	font-size: 1.1vw;
+  line-height: 188%;
 	padding: 1% 0;
-  color: #ad7f04;
+  /*color: #ad7f04;*/
+  color: #7E7E7E;
 }
 .classes_daily_banner {
-	background-color: #ad7f04;;
+	background-color: #ad7f04;
   display: block;
-  /*color: #e7a905;*/
   color: #FFF;
   font-family: "Raleway";
   letter-spacing: .175vw;
-  /*text-transform: uppercase;*/
   text-align: center;
-  margin: 0;
-  padding: 3vw 9vw;
+  width: 44vw;
+  margin-top: 4%;
+  margin-right: auto;
+  margin-left: auto;
 }
 .classes_daily_banner h3 {
     font-family: 'Open Sans', sans-serif;
@@ -147,8 +180,17 @@ hr.contact_divider {
     padding-bottom: 1%;
 }
 .classes_daily_banner p {
-   font-size: 1vw;
-   white-space: normal;
+  font-size: 0.8vw;
+  line-height: 134%;
+  white-space: normal;
+  color: #FFF;
+  padding: 3% 6% 3% 3%;
+  /*border: 2px solid #E7A905;*/
+/*  border: 2px solid #ffffff;*/
+  color: #7E7E7E;
+  background-color: #fff;
+/*  min-height: 9vw;*/
+  box-shadow: -6px 7px 26px rgba(126,126,126,0.8);
 }
 #map {
 	height: 35vw;
@@ -178,21 +220,111 @@ hr.contact_divider {
 .gm-style img {
   max-width: 2vw;
 }
-.contact_info_button {
-	margin-bottom: 4%;
-  margin-top: 2%
-}
+.contact_info_button,
 .find_class_button {
-  margin-left: -1%;
+  display: inline-block;
+  margin: 7% 3% 2% 3%;
 }
-
+div.contact_info_buttons {
+  display: block;
+  margin-left: 19%; 
+}
+/*contact queries _____________________________*/
+@media screen and (max-width: 800px) {
+  .contact_info p {
+    font-size: 1.4vw;
+  }
+  .classes_daily_banner p {
+    font-size: 1vw;
+  }
+  hr.contact_divider {
+    border-width: 2px;
+  }
+  .color {
+    border-bottom: 2px solid #4eaaa1;
+  }
+  .action-button {
+    padding: 2.5% 4.5%;
+  }
+}
+@media screen and (max-width: 629px) and (min-width: 200px) {
+ .left_half_viewport, 
+ .right_half_viewport {
+    display: block;
+    width: 100%;
+    padding-bottom: 6%;
+  }
+  .contact_info h2 {
+      padding-top: 1%;
+  }
+  .action-button {
+    padding: 2% 3%;
+  }
+  div.contact_info_buttons {
+    margin-left: 30%;
+  }
+  .classes_daily_banner {
+    width: 59vw;
+    margin-top: 1%;
+  }
+  .classes_daily_banner p {
+    box-shadow: -3px 5px 11px rgba(126,126,126,0.8);
+  }
+  .contact_info_button, .find_class_button {
+    margin: 4% 3% 6% 3%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .contact_info h2 {
+    font-size: 4vw;
+  }
+  .contact_info p {
+    font-size: 2.5vw;
+  }
+  .classes_daily_banner {
+    width: 90vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .classes_daily_banner p {
+    font-size: 2vw;
+  }
+  .classes_daily_banner p {
+    box-shadow: -3px 3px 9px rgba(126,126,126,0.8);
+  }
+  .action-button {
+    font-size: 2vw;
+  }
+  div.contact_info_buttons {
+    margin-left: 8%;
+    margin-bottom: 15%;
+  }
+  #map {
+    height: 75vw;
+  }
+  .action-button {
+    font-size: 2.7vw;
+    padding: 3% 9%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .contact_info h2 {
+    font-size: 4.3vw;
+  }
+  .contact_info p {
+    font-size: 2.8vw;
+  }
+  .classes_daily_banner p {
+    font-size: 2.2vw;
+  }
+}
 /*pricing.html_____________________________*/
 main.prices_page {
   background-color: #F9F2DE;
   font-family: 'Raleway', sans-serif;
 }
 .prices_boxes {
-  padding: 3% 0;
+  padding: 2% 0;
 }
 .prices_boxes section {
   display: inline-block;
@@ -224,7 +356,7 @@ main.prices_page {
 }
 .prices_boxes section div.mat_towel {
   position: relative;
-  top: 7vw;
+  top: -1.2vw;
 }
 section h3.pricing_header {
   text-align: center;
@@ -248,9 +380,19 @@ section h3.pricing_header {
 table tr td.table_subheader,
 table tr td.price_breakdown,
 p.class_packages_disclaimers,
-p.new_member_disclaimers {
+p.new_member_disclaimers,
+p.yearly_disclaimer {
   font-size: 0.8vw;
   padding-top: 0;
+}
+.prices_boxes section table td.unlimited_price_breakdown {
+  padding: 2% 1% 1% 0;
+  font-size: 0.8vw;
+}
+p.yearly_disclaimer {
+  position: absolute;
+  top: 36vw;
+  left: 43vw;
 }
 table tr td.price_breakdown {
   /*padding-bottom: 3%;*/
@@ -263,15 +405,10 @@ p.new_member_disclaimers {
 }
 p.class_packages_disclaimers.first {
   position: absolute;
-  top: 66vw;
+  top: 68vw;
   left: 21vw;
   color: #7e7e7e;
 }
-/*p.class_packages_disclaimers.second {
-  position: absolute;
-  top: 114%;
-  left: 11%;
-}*/
 .add_ons {
   color: #7E7E7E;
   padding: 3% 2%;
@@ -331,17 +468,34 @@ hr.guidelines_underline {
     top: 66vw;
   }
 }
+@media screen and (max-width: 2000px) and (min-width: 845px) {
+  p.yearly_disclaimer {
+    top: 36vw;
+  }
+}
+@media screen and (max-width: 844px) and (min-width: 734px) {
+  p.yearly_disclaimer {
+    top: 36vw;
+    left: 43vw;
+  }
+}
 @media screen and (max-width: 1265px) and (min-width: 111px) {
   p.class_packages_disclaimers.first {
     top: 67.5vw;
+    left: 22vw;
   }
 }
-@media screen and (max-width: 811px) and (min-width: 550px) {
+@media screen and (max-width: 811px) and (min-width: 734px) {
   .prices_boxes section {
     width: 32%;
   }
+  hr.guidelines_underline {
+    border: 1px solid #fff;
+  }
 }
-@media screen and (max-width: 549px) {
+/*______________________________*/
+
+@media screen and (max-width: 733px) {
   .prices_boxes section,
   .prices_boxes section.two_thirds {
     width: 80%;
@@ -359,7 +513,7 @@ hr.guidelines_underline {
     font-size: 1.2vw;
   }
   p.class_packages_disclaimers.first {
-    top: 72.5vw;
+    top: 143.5vw;
     left: 38vw;
   }
   p.new_member_disclaimers {
@@ -372,7 +526,7 @@ hr.guidelines_underline {
     top: 7vw;
   }
   section.glow_guidelines {
-    padding: 6% 0 4% 12%;
+    padding: 0% 0 5% 12%;
   }
   .glow_guidelines p,
   .glow_guidelines ul {
@@ -384,14 +538,115 @@ hr.guidelines_underline {
     width: 27vw;
     margin: -1% 0 1% 1.5%;
   }
+   p.yearly_disclaimer {
+    top: 42vw;
+  }
 }
-@media screen and (max-width: 400px) {
+
+@media screen and (max-width: 480px) and (min-width: 420px) {
   p.class_packages_disclaimers.first {
-    top: 74.5vw;
+      top: 147.5vw;
+      left: 38vw;
+  }
+}
+@media screen and (max-width: 420px){
+  .prices_boxes section,
+  .prices_boxes section.two_thirds {
+    width: 92%;
+  }
+  section h3.pricing_header {
+    font-size: 4vw;
+  }
+  .prices_boxes section table td {
+    font-size: 2.5vw;
+  }
+  p.class_packages_disclaimers,
+  p.new_member_disclaimers,
+  table tr td.price_breakdown,
+  p.yearly_disclaimer {
+    font-size: 1.5vw;
+  }
+  p.class_packages_disclaimers.first {
+    top: 185.5vw;
+    left: 28vw;
+  }
+  p.new_member_disclaimers {
+    position: absolute;
+    top: 17.5vw;
+    left: 21.5vw;
+  }
+  hr.guidelines_underline {
+    border: 1px solid #fff;
+    width: 27vw;
+    margin: -1% 0 1% 1.5%;
+  }
+  p.yearly_disclaimer {
+    top: 104.5vw;
     left: 38vw;
   }
-  section.glow_guidelines {
-    padding: 0% 0 5% 12%;
+}
+@media screen and (max-width: 390px){
+  section h3.pricing_header,
+  .guidelines_header {
+    font-size: 4.3vw;
+  }
+  span.glow_guidlines_font {
+    font-size: 13vw;
+  }
+  .prices_boxes section table td {
+    font-size: 3.3vw;
+  }
+  p.class_packages_disclaimers.first {
+    top: 199.5vw;
+    left: 24vw;
+  }
+  p.new_member_disclaimers {
+    position: absolute;
+    top: 18vw;
+    left: 18.5vw;
+  }
+  p.class_packages_disclaimers,
+  p.new_member_disclaimers,
+  table tr td.price_breakdown,
+  p.yearly_disclaimer {
+    font-size: 1.8vw;
+  }
+  hr.guidelines_underline {
+    width: 31vw;
+    margin: -1% 4% 1% 3.5%;
+  }
+  .glow_guidelines p, .glow_guidelines ul {
+    font-size: 2.3vw;
+    line-height: 3.1vw;
+  }
+  p.yearly_disclaimer {
+    top: 112vw;
+    left: 38vw;
+  }
+}
+@media screen and (max-width: 375px) {
+  p.yearly_disclaimer {
+    top: 113vw;
+    left: 35vw;
+  }
+  p.class_packages_disclaimers.first {
+    top: 203.5vw;
+  }
+  .prices_boxes section div {
+    box-shadow: 0px 4px 14px rgba(126,126,126,0.8);
+  }
+}
+@media screen and (max-width: 359px) {
+  p.class_packages_disclaimers.first {
+      top: 199.5vw;
+  }
+}
+@media screen and (max-width: 344px) {
+  p.class_packages_disclaimers.first {
+      top: 204.5vw;
+  } 
+  p.yearly_disclaimer{
+    top: 116vw;
   }
 }
 

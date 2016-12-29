@@ -10,6 +10,7 @@
 }
 
 /*GLOBALS_______________________________________*/
+
 *{
 	margin: 0;
 	padding: 0;
@@ -526,7 +527,7 @@ header #header_text{
 #welcome_message p{
 	text-align: justify;
 	text-justify: auto;
-	font-family: "Raleway", sans-serif;
+	font-rfamily: "Raleway", sans-serif;
 	font-size: 1.1vw;
 	text-align: center;
 	color: #7e7e7e;
@@ -676,7 +677,7 @@ footer h6 a:hover{
 /*************** FAQ.HTML  ***********/
 #faq_page{
 	background-color: #f9f2de;
-	padding: .25% 0% 1.25% 0%;
+	padding: .25% 0% 3.25% 0%;
 }
 
 #faq_right{
@@ -687,7 +688,7 @@ footer h6 a:hover{
 
 #faq_right img{
 	width: 27.5vw;
-	padding-top: 5%;
+	padding-top: 8%;
 	height: auto;
 	margin: 0 auto;
 }
@@ -701,17 +702,16 @@ footer h6 a:hover{
 
 #faq_left h3{
 	box-sizing: border-box;
-	font-size: 1.3vw;
+	font-size: 1.4vw;
 	text-align: center;
 	width: 80%;
 	margin: .5% 5% 0% 15%;
-	padding:1.75% 0% 1.75% 0%;
-	color: #434343;
+	padding: 2% 0% 2% 0%;
+	color: #7E7E7E;
 	background-color: rgb(216, 182, 106);
 	/*text-transform: lowercase;*/
     letter-spacing: 0.2vw;
     font-family: "Open Sans";
-
 }
 
 #faq_left h3:hover{
@@ -723,8 +723,8 @@ footer h6 a:hover{
 	font-size: 1.2vw;
 	width: 80%;
 	margin: 0% 5% 0% 15%;
-	padding: 0% 5% 2% 5%;
-	color: #434343;
+	padding: 1% 5% 3% 5%;
+	color: #7e7e7e;
 	background-color: #cccac7;
 	text-align: justify;
 	font-family: "Raleway";
@@ -745,7 +745,7 @@ footer h6 a:hover{
 }
 
 .instructor .instructor_photo{
-	width: 40%;
+	width: 38%;
 	float: left;
 	box-sizing: border-box;
 }
@@ -757,7 +757,7 @@ footer h6 a:hover{
 }
 
 .instructor_photo img{
-	width: 25vw;
+	width: 18vw;
 	height: auto;
 	margin: 0 auto;
 }
@@ -775,9 +775,9 @@ footer h6 a:hover{
 }
 
 .instructor_bio h3{
-	font-family: "Raleway";
+	font-family: 'Open Sans', sans-serif;
 	color: #7e7e7e;
-	font-size: 2.5vw;
+	font-size: 2.2vw;
     letter-spacing: .1vw;
 }
 
@@ -790,15 +790,18 @@ footer h6 a:hover{
 }
 
 .instructor_bio h4{
-	font-family: "Dancing Script";
+	font-family: 'foxglow-regular';
 	color: #ad7f04;
-	font-size: 2.55vw;
+	font-weight: 500;
+	font-size: 3.3vw;
+	text-transform: lowercase;
     letter-spacing: .125vw;
+    margin-top: -1.6%;
 }
 
-.instructor .instructor_bio h4{
+/*.instructor .instructor_bio h4{
 	padding: .75% 10% 0% 0%;
-}
+}*/
 
 .instructor_2 .instructor_bio h4{
 	padding: .75% 0% 0% 10%;
@@ -807,19 +810,20 @@ footer h6 a:hover{
 .instructor_bio p{
 	text-align: justify;
 	text-justify: auto;
-	font-family: "Open Sans";
+	font-family: "Raleway", sans-serif;
 	color: #7e7e7e;
-	font-size: 1.65vw;
+	font-size: 1.2vw;
 	box-sizing: border-box;
 }
 
 
 .instructor .instructor_bio p{
-	padding: 1.5% 10% 5% 0%;
+	padding: 1.1% 10% 5% 0%;
 }
 
 .instructor_2 .instructor_bio p{
-	padding: 1.5% 40% 5% 10%;
+	padding: 1.1% 40% 5% 10%;
+
 }
 
 /***********  END FAMILY.HTML  ***********/
