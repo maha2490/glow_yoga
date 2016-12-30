@@ -874,23 +874,35 @@ footer h6 a:hover{
 	float: left;
 	box-sizing: border-box;
 }
-#space_images .row_of_three.portrait {
+#space_images .row_of_three.landscape1 {
 	width: 44%;
 	float: left;
 	box-sizing: border-box;
 	margin: 0 0 2.5% 2.75%;
 }
-#space_images .row_of_three.landscape {
+#space_images .row_of_three.portrait {
 	width: 21%;
 	float: left;
 	box-sizing: border-box;
 	margin-bottom: 2.5%;
 }
-#space_images .row_of_three.landscape.left {
+#space_images .row_of_three.portrait.left1 {
 	margin: 0 1% 2.5% 6%;
 }
-#space_images .row_of_three.landscape.right {
+#space_images .row_of_three.portrait.right1 {
 	margin: 0 0% 2.5% 2%;
+}
+#space_images .row_of_three.portrait.left2 {
+	margin: 0 1% 2.5% 2%;
+}
+#space_images .row_of_three.portrait.right2 {
+	margin: 0 1% 2.5% 2.3%;
+}
+#space_images .row_of_three.landscape2 {
+	width: 44%;
+	float: left;
+	box-sizing: border-box;
+	margin: 0 0 2.5% 5%;
 }
 #space_images .row_of_three img{
 	width: auto;
@@ -900,6 +912,23 @@ footer h6 a:hover{
 #space_images .row_of_two h4,
 #space_images .row_of_three h4 {
 	padding-top: 5%;
+	text-align: center;
+	font-family: "Raleway";
+	font-size: 1.3vw;
+	text-transform: lowercase;
+	color: #7e7e7e;
+}
+#space_images .row_of_two h4,
+#space_images .row_of_three h4 {
+	padding-top: 5%;
+	text-align: center;
+	font-family: "Raleway";
+	font-size: 1.3vw;
+	text-transform: lowercase;
+	color: #7e7e7e;
+}
+#space_images .row_of_three.portrait h4 {
+	padding-top: 10%;
 	text-align: center;
 	font-family: "Raleway";
 	font-size: 1.3vw;
