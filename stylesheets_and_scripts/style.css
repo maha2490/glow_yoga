@@ -463,7 +463,7 @@ header #header_text{
 
 #mh_phone{
     position: absolute;
-    top: 10vh;
+    top: 12vh;
     right: 2vw;
     width: 65%;
     float: right;
@@ -527,7 +527,7 @@ header #header_text{
 #welcome_message p{
 	text-align: justify;
 	text-justify: auto;
-	font-rfamily: "Raleway", sans-serif;
+	font-family: "Raleway", sans-serif;
 	font-size: 1.1vw;
 	text-align: center;
 	color: #7e7e7e;
@@ -841,43 +841,81 @@ footer h6 a:hover{
 
 #space_intro h3{
 	text-align: center;
-	font-family: "Raleway";
-	font-size: 1.65vw;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2vw;
 	color: #ad7f04;
 	padding-bottom: 1%;
 }
 
 #space_intro p{
 	text-align: center;
-	text-align: justify;
-	text-justify: auto;
-	font-family: "Open Sans";
+	/*text-align: justify;
+	text-justify: auto;*/
+	font-family: "Raleway", sans-serif;
 	font-size: 1.25vw;
 	color: #7e7e7e;
 	padding: 0% 1% 0% 1%;
+	line-height: 142%;
 }
 
-#space_images .space{
-	width: 33.33%;
+#space_images {
+	margin: 0.5% 2.5% 0% 2.5%;
+}
+
+/*ROWS OF TWO AND THREE_________________*/
+#space_images .row_of_two {
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+	margin-bottom: 2.5%;
+}
+#space_images .row_of_two img{
+	width: auto;
+	height: 28vw;
+	margin: 0 auto;
+}
+#space_images .row_of_two {
+	width: 50%;
 	float: left;
 	box-sizing: border-box;
 }
-
-#space_images{
-	margin: 2.5% 2.5% 0% 2.5%;
+#space_images .row_of_three.landscape1 {
+	width: 44%;
+	float: left;
+	box-sizing: border-box;
+	margin: 0 0 2.5% 2.75%;
 }
-
-#space_images .space{
+#space_images .row_of_three.portrait {
+	width: 21%;
+	float: left;
+	box-sizing: border-box;
 	margin-bottom: 2.5%;
 }
-
-#space_images .space img{
-	width: 25vw;
-	height: 45vh;
+#space_images .row_of_three.portrait.left1 {
+	margin: 0 1% 2.5% 6%;
+}
+#space_images .row_of_three.portrait.right1 {
+	margin: 0 0% 2.5% 2%;
+}
+#space_images .row_of_three.portrait.left2 {
+	margin: 0 1% 2.5% 2%;
+}
+#space_images .row_of_three.portrait.right2 {
+	margin: 0 1% 2.5% 2.3%;
+}
+#space_images .row_of_three.landscape2 {
+	width: 44%;
+	float: left;
+	box-sizing: border-box;
+	margin: 0 0 2.5% 5%;
+}
+#space_images .row_of_three img{
+	width: auto;
+	height: 28vw;
 	margin: 0 auto;
 }
-
-#space_images .space h4{
+#space_images .row_of_two h4,
+#space_images .row_of_three h4 {
 	padding-top: 5%;
 	text-align: center;
 	font-family: "Raleway";
@@ -885,8 +923,62 @@ footer h6 a:hover{
 	text-transform: lowercase;
 	color: #7e7e7e;
 }
+#space_images .row_of_two h4,
+#space_images .row_of_three h4 {
+	padding-top: 5%;
+	text-align: center;
+	font-family: "Raleway";
+	font-size: 1.3vw;
+	text-transform: lowercase;
+	color: #7e7e7e;
+}
+#space_images .row_of_three.portrait h4 {
+	padding-top: 10%;
+	text-align: center;
+	font-family: "Raleway";
+	font-size: 1.3vw;
+	text-transform: lowercase;
+	color: #7e7e7e;
+}
+/*SPACE QUERIES____________________________*/
+@media screen and (max-width: 420px) {
+	#space_intro h3{
+		font-size: 5.5vw;
+	}
 
-
+	#space_intro p{
+		font-size: 4vw;
+    	line-height: 120%;
+	}
+	#space_images .row_of_two h4, #space_images .row_of_three h4,
+	#space_images .row_of_three.portrait h4 {
+	    padding: 2% 0;
+	    font-size: 3.5vw;
+	}
+	#space_images .row_of_two,
+	#space_images .row_of_three.landscape1,
+	#space_images .row_of_three.landscape2 {
+		display: block;
+	    width: 100%;
+	}
+	#space_images .row_of_three.portrait {
+		width: 50%;
+	}
+	#space_images .row_of_three.landscape1,
+	#space_images .row_of_three.landscape2 {
+		margin: 0;
+	}
+	#space_images .row_of_two img,
+	#space_images .row_of_three img {
+	    height: 55vw;
+	}
+	#space_images .row_of_three.portrait.left1,
+	#space_images .row_of_three.portrait.left2,
+	#space_images .row_of_three.portrait.right1,
+	#space_images .row_of_three.portrait.right2 {
+		margin: 0;
+	}
+}
 /***********  END SPACE.HTML  ***********/
 
 /***********  START EVENTS.HTML  ***********/
@@ -974,8 +1066,6 @@ footer h6 a:hover{
 #styles_page h4{
 	font-family: "Dancing Script";
 	text-transform: lowercase;
-	/*color: #4e4e4f;*/
-	/*color: #d3b332;*/
 	color: #b2972a;
 	font-size: 1.75vw;
 	padding-bottom: .5vh;
@@ -1196,21 +1286,6 @@ footer h6 a:hover{
 
 /*-*-*-*-*-*  END STYLES.HTML MEDIA QUERIES *-*-*-*-*-*/
 
-/*-*-*-*-*-*  START SPACE.HTML MEDIA QUERIES *-*-*-*-*-*/
-
-@media screen and (max-width: 420px){
-
-	#space_intro h3{
-		font-size: 5.75vw;
-	}
-
-	#space_intro p{
-		font-size: 5vw;
-    	line-height: 120%;
-	}
-}
-
-/*-*-*-*-*-*  END SPACE.HTML MEDIA QUERIES *-*-*-*-*-*/
 
 /*-*-*-*-*-*  START FAQ.HTML MEDIA QUERIES *-*-*-*-*-*/
 

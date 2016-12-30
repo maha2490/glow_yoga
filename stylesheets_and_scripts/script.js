@@ -36,7 +36,7 @@ var map;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     zoom: 16,
-    center: new google.maps.LatLng(25.789,  -80.140),
+    center: new google.maps.LatLng(25.789, -80.140),
     mapTypeId: 'roadmap'
   });
 
@@ -45,6 +45,9 @@ function initMap() {
     parking: {
       name: 'Parking',
       icon: iconBase + 'parking_lot_maps.png'
+    },
+    glowYoga: {
+      name: 'Glow Yoga'
     }
   };
 
@@ -62,7 +65,10 @@ function initMap() {
     }, {
       position: new google.maps.LatLng(25.7869427, -80.138672),
       type: 'parking'
-    }
+    }, {
+      position: new google.maps.LatLng(25.789, -80.140),
+      type: 'glowYoga'
+      }
   ];
 
   for (var i = 0, feature; feature = features[i]; i++) {
