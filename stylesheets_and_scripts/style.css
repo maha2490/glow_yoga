@@ -463,7 +463,7 @@ header #header_text{
 
 #mh_phone{
     position: absolute;
-    top: 10vh;
+    top: 12vh;
     right: 2vw;
     width: 65%;
     float: right;
@@ -866,7 +866,7 @@ footer h6 a:hover{
 }
 #space_images .row_of_two img{
 	width: auto;
-	height: 54vh;
+	height: 28vw;
 	margin: 0 auto;
 }
 #space_images .row_of_two {
@@ -906,7 +906,7 @@ footer h6 a:hover{
 }
 #space_images .row_of_three img{
 	width: auto;
-	height: 54vh;
+	height: 28vw;
 	margin: 0 auto;
 }
 #space_images .row_of_two h4,
@@ -935,8 +935,45 @@ footer h6 a:hover{
 	text-transform: lowercase;
 	color: #7e7e7e;
 }
+/*SPACE QUERIES____________________________*/
+@media screen and (max-width: 420px) {
+	#space_intro h3{
+		font-size: 5.5vw;
+	}
 
-
+	#space_intro p{
+		font-size: 4vw;
+    	line-height: 120%;
+	}
+	#space_images .row_of_two h4, #space_images .row_of_three h4,
+	#space_images .row_of_three.portrait h4 {
+	    padding: 2% 0;
+	    font-size: 3.5vw;
+	}
+	#space_images .row_of_two,
+	#space_images .row_of_three.landscape1,
+	#space_images .row_of_three.landscape2 {
+		display: block;
+	    width: 100%;
+	}
+	#space_images .row_of_three.portrait {
+		width: 50%;
+	}
+	#space_images .row_of_three.landscape1,
+	#space_images .row_of_three.landscape2 {
+		margin: 0;
+	}
+	#space_images .row_of_two img,
+	#space_images .row_of_three img {
+	    height: 55vw;
+	}
+	#space_images .row_of_three.portrait.left1,
+	#space_images .row_of_three.portrait.left2,
+	#space_images .row_of_three.portrait.right1,
+	#space_images .row_of_three.portrait.right2 {
+		margin: 0;
+	}
+}
 /***********  END SPACE.HTML  ***********/
 
 /***********  START EVENTS.HTML  ***********/
@@ -1024,8 +1061,6 @@ footer h6 a:hover{
 #styles_page h4{
 	font-family: "Dancing Script";
 	text-transform: lowercase;
-	/*color: #4e4e4f;*/
-	/*color: #d3b332;*/
 	color: #b2972a;
 	font-size: 1.75vw;
 	padding-bottom: .5vh;
@@ -1246,21 +1281,6 @@ footer h6 a:hover{
 
 /*-*-*-*-*-*  END STYLES.HTML MEDIA QUERIES *-*-*-*-*-*/
 
-/*-*-*-*-*-*  START SPACE.HTML MEDIA QUERIES *-*-*-*-*-*/
-
-@media screen and (max-width: 420px){
-
-	#space_intro h3{
-		font-size: 5.75vw;
-	}
-
-	#space_intro p{
-		font-size: 5vw;
-    	line-height: 120%;
-	}
-}
-
-/*-*-*-*-*-*  END SPACE.HTML MEDIA QUERIES *-*-*-*-*-*/
 
 /*-*-*-*-*-*  START FAQ.HTML MEDIA QUERIES *-*-*-*-*-*/
 
