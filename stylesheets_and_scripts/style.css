@@ -527,7 +527,7 @@ header #header_text{
 #welcome_message p{
 	text-align: justify;
 	text-justify: auto;
-	font-rfamily: "Raleway", sans-serif;
+	font-family: "Raleway", sans-serif;
 	font-size: 1.1vw;
 	text-align: center;
 	color: #7e7e7e;
@@ -836,43 +836,69 @@ footer h6 a:hover{
 
 #space_intro h3{
 	text-align: center;
-	font-family: "Raleway";
-	font-size: 1.65vw;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2vw;
 	color: #ad7f04;
 	padding-bottom: 1%;
 }
 
 #space_intro p{
 	text-align: center;
-	text-align: justify;
-	text-justify: auto;
-	font-family: "Open Sans";
+	/*text-align: justify;
+	text-justify: auto;*/
+	font-family: "Raleway", sans-serif;
 	font-size: 1.25vw;
 	color: #7e7e7e;
 	padding: 0% 1% 0% 1%;
+	line-height: 142%;
 }
 
-#space_images .space{
-	width: 33.33%;
+#space_images {
+	margin: 0.5% 2.5% 0% 2.5%;
+}
+
+/*ROWS OF TWO AND THREE_________________*/
+#space_images .row_of_two {
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+	margin-bottom: 2.5%;
+}
+#space_images .row_of_two img{
+	width: auto;
+	height: 54vh;
+	margin: 0 auto;
+}
+#space_images .row_of_two {
+	width: 50%;
 	float: left;
 	box-sizing: border-box;
 }
-
-#space_images{
-	margin: 2.5% 2.5% 0% 2.5%;
+#space_images .row_of_three.portrait {
+	width: 44%;
+	float: left;
+	box-sizing: border-box;
+	margin: 0 0 2.5% 2.75%;
 }
-
-#space_images .space{
+#space_images .row_of_three.landscape {
+	width: 21%;
+	float: left;
+	box-sizing: border-box;
 	margin-bottom: 2.5%;
 }
-
-#space_images .space img{
-	width: 25vw;
-	height: 45vh;
+#space_images .row_of_three.landscape.left {
+	margin: 0 1% 2.5% 6%;
+}
+#space_images .row_of_three.landscape.right {
+	margin: 0 0% 2.5% 2%;
+}
+#space_images .row_of_three img{
+	width: auto;
+	height: 54vh;
 	margin: 0 auto;
 }
-
-#space_images .space h4{
+#space_images .row_of_two h4,
+#space_images .row_of_three h4 {
 	padding-top: 5%;
 	text-align: center;
 	font-family: "Raleway";
