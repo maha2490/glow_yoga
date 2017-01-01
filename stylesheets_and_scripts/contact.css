@@ -14,51 +14,6 @@ header {
     padding-bottom: 1%;
     color: #ad7f04;
 }
-/*.btn {
-	font-family: "Raleway";
-	background: #28bfd7;
-	border-radius: 28px;
-   	color: #ffffff;
-    font-size: 20px;
-  	padding: 10px 20px 10px 20px;
-    text-decoration: none;
-}*/
-button.standard {
-	font-family: "Raleway";
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: .175vw;
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  /*background: #93f0eb;*/
-  background-color: #e7a905;
-  border-color: #e7a905;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 18px;
-  padding: 14px 22px 14px 22px;
-  text-decoration: none;
-  border-color: #e7a905;
-}
-button:focus {
-	outline:0;
-}
-button.standard:hover {
-  background: #fac025;
-  background-image: -webkit-linear-gradient(top, #fac025, #f2b206);
-  background-image: -moz-linear-gradient(top, #fac025, #f2b206);
-  background-image: -ms-linear-gradient(top, #fac025, #f2b206);
-  background-image: -o-linear-gradient(top, #fac025, #f2b206);
-  background-image: linear-gradient(to bottom, #fac025, #f2b206);
-  text-decoration: none;
-}
-button.standard:active {
-  background: #ce9704;
-  text-decoration: none;
-}
 
 .js_nav_active_box {
     /*border: 2px solid #f9f2de;*/
@@ -70,8 +25,27 @@ button.standard:active {
     margin-bottom: -9%;
     margin-left: 13.5%;
 }
+/*components queries__________________________*/
+@media screen and (max-width: 945px) and (min-width: 745px) {
+  .js_nav_active_box {
+    padding: 4% 5% 8% 5%;
+    margin-top: -7%;
+  }
+}
+@media screen and (max-width: 744px) and (min-width: 631px) {
+  .js_nav_active_box {
+    padding: 1% 5% 8% 5%;
+    margin-top: -4%;
+  }
+}
+@media screen and (max-width: 630px) and (min-width: 421px) {
+  .js_nav_active_box {
+    padding: 0 5% 8% 5%;
+    margin-top: -7%;
+  }
 
-/*NEW BUTTON STYLE??*/
+}
+/* BUTTON STUFF ______________________________*/
 .animate {
   transition: all 0.1s;
   -webkit-transition: all 0.1s;

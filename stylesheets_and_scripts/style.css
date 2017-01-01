@@ -166,11 +166,8 @@ nav ul li a{
 	letter-spacing: .25vw;
 }
 
-
 /***********  Dropdown Nav Style  ***********/
-
-
-/* Style The Dropdown Button */
+/*Dropdown Button */
 .dropbtn {
     background-color: transparent;
     color: #ad7f04;
@@ -204,11 +201,11 @@ nav ul li a{
     display: none;
     position: absolute;
     background-color: transparent;
-    min-width: 188px;
     letter-spacing: .1vw;
     z-index: 200000000;
     background-color: #fff;
     text-transform: lowercase;
+    width: 150%;
 }
 
 /* Links inside the dropdown */
@@ -253,8 +250,87 @@ nav ul li a{
     color: #7E7E7E;
     font-weight: bold;
 }
-
 /***********  End Dropdown Nav Style  ***********/
+
+/***********  FULL NAV QUERIES    ***********/
+@media screen and (max-width: 1959px) and (min-width: 1300px) {
+	.dropdown-content {
+		width: 160%;
+	}
+}
+@media screen and (max-width: 1299px) and (min-width: 1074px) {
+	.dropdown-content {
+		width: 170%;
+	}
+}
+@media screen and (max-width: 1073px) and (min-width: 1006px) {
+	.dropdown-content {
+		width: 174%;
+	}
+}
+@media screen and (max-width: 1005px) and (min-width: 851px) {
+	.dropdown-content {
+		width: 174%;
+		left: 0vw;
+	}
+	.dropdown-content a {
+	    font-size: 1vw;
+	    padding: 16px 19px 15px 23px;
+	}
+}
+@media screen and (max-width: 850px) and (min-width: 701px) {
+	.dropdown-content {
+		width: 174%;
+		left: 0vw;
+	}
+	.dropdown-content a {
+	    font-size: 1vw;
+	    padding: 16px 13px 15px 20px;
+	}
+}
+
+@media screen and (max-width: 700px) and (min-width: 575px) {
+	nav {
+	    height: 1.5vw;
+	}
+	nav ul {
+	    top: -1.55vw;
+	}
+	.dropdown-content {
+		width: 188%;
+		left: 0vw;
+	}
+	.dropdown-content a {
+	    font-size: 1.2vw;
+	    padding: 12px 13px 13px 14px;
+	}
+}
+@media screen and (max-width: 574px) and (min-width: 490px) {
+	nav {
+	    height: 2.2vw;
+	}
+	.dropdown-content {
+		width: 196%;
+		left: 0vw;
+	}
+	.dropdown-content a {
+	    font-size: 1.2vw;
+	    padding: 18px 13px 6px 14px;
+	}
+}
+@media screen and (max-width: 489px) and (min-width: 421px) {
+	nav {
+	    height: 2.6vw;
+	}
+	.dropdown-content {
+		width: 196%;
+		left: 0vw;
+	}
+	.dropdown-content a {
+	    padding: 11px 1px 6px 15px;
+	}
+}
+
 
 /**-*-*-*-*-*  START MOBILE HEADER/NAV STYLING  *-*-*-*-*-**/
 
