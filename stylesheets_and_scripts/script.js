@@ -18,19 +18,7 @@ $(document).ready(function(){
 
 });
 
-//New google map test
-
-// function initMap() {
-//   var uluru = {lat: 25.789, lng: -80.140};
-//   var map = new google.maps.Map(document.getElementById('map'), {
-//     zoom: 16,
-//     center: uluru
-//   });
-//   var marker = new google.maps.Marker({
-//     position: uluru,
-//     map: map
-//   });
-// }
+//GOOGLE MAP CONFIG______________________
 
 var map;
 function initMap() {
@@ -40,14 +28,22 @@ function initMap() {
     mapTypeId: 'roadmap'
   });
 
+  var lotusMarker = {
+    url: 'assets/glow_favicon.png', // image is 512 x 512
+    scaledSize : new google.maps.Size(22, 32),
+  };
+
   var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+
   var icons = {
     parking: {
       name: 'Parking',
       icon: iconBase + 'parking_lot_maps.png'
     },
     glowYoga: {
-      name: 'Glow Yoga'
+      name: 'Glow Yoga',
+      icon: lotusMarker, 
+      scaledSize : new google.maps.Size(22, 32)
     }
   };
 
@@ -58,6 +54,7 @@ function initMap() {
       map: map
     });
   }
+  
 
   var features = [
     { position: new google.maps.LatLng(25.7897423, -80.1400118),

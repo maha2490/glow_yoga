@@ -1009,6 +1009,11 @@ footer h6 a:hover{
 	color: #7e7e7e;
 }
 /*SPACE QUERIES____________________________*/
+@media screen and (max-width: 431px) and (min-width: 421px) {
+	#space_page {
+	    padding-top: 1%;
+	}
+}
 @media screen and (max-width: 420px) {
 	#space_intro h3{
 		font-size: 5.5vw;
@@ -1032,9 +1037,12 @@ footer h6 a:hover{
 	#space_images .row_of_three.portrait {
 		width: 50%;
 	}
-	#space_images .row_of_three.landscape1,
-	#space_images .row_of_three.landscape2 {
+	#space_images .row_of_three.landscape1 {
 		margin: 0;
+	}
+	#space_images .row_of_three.landscape2 {
+		padding: 4% 0 4% 0;
+    	margin: 0;
 	}
 	#space_images .row_of_two img,
 	#space_images .row_of_three img {
@@ -1045,6 +1053,14 @@ footer h6 a:hover{
 	#space_images .row_of_three.portrait.right1,
 	#space_images .row_of_three.portrait.right2 {
 		margin: 0;
+	}
+	#space_images .row_of_three.portrait.left1,
+	#space_images .row_of_three.portrait.left2 {
+		padding: 4% 0 0 1.5%;
+	}
+	#space_images .row_of_three.portrait.right1,
+	#space_images .row_of_three.portrait.right2 {
+		padding: 4% 1% 0 0;
 	}
 }
 /***********  END SPACE.HTML  ***********/
