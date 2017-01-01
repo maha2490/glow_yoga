@@ -91,17 +91,15 @@ button.standard:active {
   text-decoration: none;  
 }
 .color {
-  background-color: #73BFB8;
-  border-bottom: 5px solid #4eaaa1;
-  text-shadow: 0px -2px #4eaaa1;
+  background-color: #FFA737;
+  border-bottom: 5px solid #d9a25d;
+  text-shadow: 0px -2px #d9a25d;
 }
 .action-button:active {
   transform: translate(0px,5px);
   -webkit-transform: translate(0px,5px);
   border-bottom: 1px solid;
 }
-
-
 
 /*__________________________________*/
 main.middle {
@@ -230,6 +228,11 @@ div.contact_info_buttons {
   margin-left: 19%; 
 }
 /*contact queries _____________________________*/
+@media screen and (max-width: 1440px) and (min-width: 801px){
+  .color {
+    border-bottom: 3px solid #d9a25d;
+  }
+}
 @media screen and (max-width: 800px) {
   .contact_info p {
     font-size: 1.4vw;
@@ -241,7 +244,7 @@ div.contact_info_buttons {
     border-width: 2px;
   }
   .color {
-    border-bottom: 2px solid #4eaaa1;
+    border-bottom: 2px solid #d9a25d;
   }
   .action-button {
     padding: 2.5% 4.5%;
