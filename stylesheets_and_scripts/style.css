@@ -849,15 +849,12 @@ footer h6 a:hover{
 
 #space_intro p{
 	text-align: center;
-	/*text-align: justify;
-	text-justify: auto;*/
 	font-family: "Raleway", sans-serif;
 	font-size: 1.25vw;
 	color: #7e7e7e;
 	padding: 0% 1% 0% 1%;
 	line-height: 142%;
 }
-
 #space_images {
 	margin: 0.5% 2.5% 0% 2.5%;
 }
@@ -869,7 +866,7 @@ footer h6 a:hover{
 	box-sizing: border-box;
 	margin-bottom: 2.5%;
 }
-#space_images .row_of_two img{
+#space_images .row_of_two img {
 	width: auto;
 	height: 28vw;
 	margin: 0 auto;
