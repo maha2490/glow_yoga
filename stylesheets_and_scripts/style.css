@@ -829,6 +829,10 @@ footer h6 a:hover{
 
 /***********  START FAMILY.HTML  ***********/
 
+.mobile_family{
+	display: none;
+}
+
 #family_page{
 	background-color: #f9f2de;
 	padding: .25% 0% 1.25% 0%;
@@ -852,6 +856,7 @@ footer h6 a:hover{
 }
 
 .instructor_photo img{
+	padding-top: 10%;
 	width: 18vw;
 	height: auto;
 	margin: 0 auto;
@@ -920,6 +925,69 @@ footer h6 a:hover{
 	padding: 1.1% 40% 5% 10%;
 
 }
+
+/*.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  display: inline-block;	
+  content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  display: inline-block;	
+  content: 'Show less';
+}
+
+.read-more-wrap{
+	padding-bottom: 0%;
+}
+
+.read-more-target{
+	padding-bottom: 0%;
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  font-size: .9em;
+  float: right;
+  margin-right: 10%;
+}*/
+
+
+
+
+.hide {
+  display: none;
+}
+
+.read-more-show, .read-more-hide{
+	padding-left: 1%;
+	
+	color: #ad7f04;
+	font-weight: 500;
+	
+	text-transform: lowercase;
+    letter-spacing: .125vw;
+}
+
+
 
 /***********  END FAMILY.HTML  ***********/
 
@@ -1460,4 +1528,79 @@ footer h6 a:hover{
 
 /*-*-*-*-*-*  END FAQ.HTML MEDIA QUERIES *-*-*-*-*-*/
 
+/*-*-*-*-*-*  START FAMILY.HTML MEDIA QUERIES *-*-*-*-*-*/
 
+	.mobile_family{
+		background-color: #f9f2de;
+		padding-top: 2%;
+
+	}
+
+	.mobile_family .clickable{
+		background-color: rgb(216, 182, 106);
+		width: 90%;
+		margin: 0 auto;
+		
+
+	}
+
+	.mobile_family .mobile_family_instructor_class{
+		padding: 10% 0% 10% 0%;
+		font-family: "Open Sans";
+		line-height: 2.75vh;
+	}
+
+	.mobile_family_instructor_class h4{
+		font-family: "Foxglow-Regular";
+		text-transform: lowercase;
+		font-size: 7.5vw;
+	}
+
+
+
+	.mobile_family .mobile_family_text{
+		background-color: rgb(216, 182, 106);
+		width: 90%;
+		margin: 0 auto;
+
+	}
+
+	.mobile_family .mobile_family_image{
+		box-sizing: border-box;
+		width: 30%;
+		float: left;
+	}
+
+	.mobile_family_image img{
+		width: 20vw;
+    	height: auto;
+    	margin: 0 auto;
+    	padding: 10% 0% 10% 0%;
+	}
+
+	.mobile_family .mobile_family_instructor_class{
+		box-sizing: border-box;
+		width: 70%;
+		float: right;
+	}
+
+	.mobile_family_text p{
+		font-family: "Open Sans";
+		padding: 0% 10% 0% 10%;
+		font-size: 3.75vw;
+    	text-align: justify;
+    	padding-bottom: 5%;
+	}
+
+@media screen and (max-width: 420px){
+	#full_family{
+		display: none;
+	}
+
+	.mobile_family{
+		display: block;
+	}
+}		
+
+
+/*-*-*-*-*-*  END FAMILY.HTML MEDIA QUERIES *-*-*-*-*-*/
