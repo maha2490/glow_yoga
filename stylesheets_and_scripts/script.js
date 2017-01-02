@@ -116,7 +116,6 @@ $(document).ready(function(){
 // **********  FAQ DROPDOWNS  **********
 
 
-<<<<<<< HEAD
 
   $("main #faq_left p").hide();
 
