@@ -143,15 +143,15 @@ $(document).ready(function(){
 var map;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 16,
+    zoom: 17,
     center: new google.maps.LatLng(25.789, -80.140),
     mapTypeId: 'roadmap'
   });
 
   // ICONS_____________
   var glowImage = {
-      url: 'assets/glow_marker3.png', // image is 512 x 512
-      scaledSize : new google.maps.Size(52, 52),
+      url: 'assets/glow_marker6.png', // image is 512 x 512
+      scaledSize : new google.maps.Size(62, 62),
   };
 
   var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
@@ -185,8 +185,8 @@ function initMap() {
     }, {
       // changing the marker positioning:
       // move at the thousandths, increase lat moves up on x axis
-      // and                      increase lng moves left on y axis
-      position: new google.maps.LatLng(25.7885976, -80.1402493),
+      // and                      increase lng moves left on y axis                            
+      position: new google.maps.LatLng(25.7887976, -80.1403493), 
       type: 'glowYoga'
       }
   ];
@@ -194,7 +194,7 @@ function initMap() {
   for (var i = 0, feature; feature = features[i]; i++) {
     addMarker(feature);
   }
-  
+
   // legend, if you want to reactivate. will need glow marker img (couldn't figure out initially)
   // var legend = document.getElementById('legend');
   // for (var key in icons) {
@@ -208,7 +208,4 @@ function initMap() {
 
   // map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
 }
-
-
-
 
