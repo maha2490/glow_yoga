@@ -1,22 +1,132 @@
 $(document).ready(function(){
 
-	// $("main #members p").hide();
+// **********  FAMILY.HTML  **********  
 
-	// 	$("main #members h3").click(function(){
-	// 		$(this).next().slideToggle();  //  .next, .siblings
-			
-	// 	});
-	$("main #faq_left p").hide();
+  // Hide the extra content initially
+  $('.read-more-content').addClass('hide')
+  $('.read-more-show, .read-more-hide').removeClass('hide')
 
-	$("main #faq_left h3").click(function(){
-			$(this).next().slideToggle(); 
-			
-		});
-	$(".dropdown").click(function(){
-		$(this).toggleClass("js_nav_active_box");
-	});
+  // Set up the toggle effect:
+  $('.read-more-show').on('click', function(e) {
+    $(this).next('.read-more-content').removeClass('hide');
+    $(this).addClass('hide');
+    e.preventDefault();
+  });
+
+  $('.read-more-hide').on('click', function(e) {
+    $(this).parent('.read-more-content').addClass('hide');
+    var moreid=$(this).attr("more-id");
+    $('.read-more-show#'+moreid).removeClass('hide');
+    e.preventDefault();
+  });
+
+// **********  FAMILY.HTML (mobile)  **********  
+
+  // $(".mobile_family_text").hide();  
+
+  // $(".mobile_family").click(function(){
+
+  //     $(".mobile_family_text").slideToggle();
+  // });
+
+  $(".raquel_text").hide();  
+
+  $(".raquel_clickable").click(function(){
+
+      $(".raquel_text").slideToggle();
+  });
+
+  $(".john_text").hide();  
+
+  $(".john_clickable").click(function(){
+
+      $(".john_text").slideToggle();
+  });
+
+  $(".francesca_text").hide();  
+
+  $(".francesca_clickable").click(function(){
+
+      $(".francesca_text").slideToggle();
+  });
+
+  $(".lina_text").hide();  
+
+  $(".lina_clickable").click(function(){
+
+      $(".lina_text").slideToggle();
+  });
+
+  $(".caroline_text").hide();  
+
+  $(".caroline_clickable").click(function(){
+
+      $(".caroline_text").slideToggle();
+  });
+
+  $(".amy_text").hide();  
+
+  $(".amy_clickable").click(function(){
+
+      $(".amy_text").slideToggle();
+  });
+
+  $(".maria_text").hide();  
+
+  $(".maria_clickable").click(function(){
+
+      $(".maria_text").slideToggle();
+  });
+
+  $(".willie_text").hide();  
+
+  $(".willie_clickable").click(function(){
+
+      $(".willie_text").slideToggle();
+  });
+
+  $(".lulu_text").hide();  
+
+  $(".lulu_clickable").click(function(){
+
+      $(".lulu_text").slideToggle();
+  });
+
+  $(".brenda_text").hide();  
+
+  $(".brenda_clickable").click(function(){
+
+      $(".brenda_text").slideToggle();
+  });
+
+  $(".julie_text").hide();  
+
+  $(".julie_clickable").click(function(){
+
+      $(".julie_text").slideToggle();
+  });
+
+  $(".jeanmarie_text").hide();  
+
+  $(".jeanmarie_clickable").click(function(){
+
+      $(".jeanmarie_text").slideToggle();
+  });
+
+// **********  FAQ.HTML  **********
+
+  $("main #faq_left p").hide();
+
+  $("main #faq_left h3").click(function(){
+      $(this).next().slideToggle(); 
+      
+    });
+  $(".dropdown").click(function(){
+    $(this).toggleClass("js_nav_active_box");
+  });
 
 });
+
 
 //New google map test
 
@@ -81,6 +191,8 @@ function initMap() {
 
   map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
 }
+
+
 
 // var map;
 //   function initMap() {
