@@ -236,6 +236,9 @@ div.contact_info_buttons {
     width: 100%;
     padding-bottom: 6%;
   }
+  #map {
+    height: 55vw;
+  }
   .contact_info h2 {
       padding-top: 1%;
   }
@@ -257,6 +260,13 @@ div.contact_info_buttons {
   }
 }
 @media screen and (max-width: 420px) {
+  .left_half_viewport, 
+  .right_half_viewport {
+    display: block;
+    width: 100%;
+    padding-bottom: 6%;
+  }
+
   .contact_info h2 {
     font-size: 4vw;
   }
@@ -289,17 +299,7 @@ div.contact_info_buttons {
     padding: 3% 9%;
   }
 }
-@media screen and (max-width: 420px) {
-  .contact_info h2 {
-    font-size: 4.3vw;
-  }
-  .contact_info p {
-    font-size: 2.8vw;
-  }
-  .classes_daily_banner p {
-    font-size: 2.2vw;
-  }
-}
+
 /*pricing.html_____________________________*/
 main.prices_page {
   background-color: #F9F2DE;

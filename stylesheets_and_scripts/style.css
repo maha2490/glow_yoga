@@ -1531,65 +1531,62 @@ footer h6 a:hover{
 /*-*-*-*-*-*  START FAMILY.HTML MEDIA QUERIES *-*-*-*-*-*/
 
 	.mobile_family{
-		background-color: #f9f2de;
+		background-color: #ffffff;
 		padding-top: 2%;
 
 	}
-
 	.mobile_family .clickable{
-		background-color: rgb(216, 182, 106);
+		background-color: #f9f2de;
 		width: 90%;
 		margin: 0 auto;
-		
-
 	}
-
 	.mobile_family .mobile_family_instructor_class{
 		padding: 10% 0% 10% 0%;
 		font-family: "Open Sans";
 		line-height: 2.75vh;
 	}
-
-	.mobile_family_instructor_class h4{
-		font-family: "Foxglow-Regular";
-		text-transform: lowercase;
-		font-size: 7.5vw;
+	.mobile_family_instructor_class h3 {
+		color: #7E7E7E;
 	}
 
-
-
+	.mobile_family_instructor_class h4 {
+		font-family: "Foxglow-Regular";
+		color: #ad7f04;
+		font-weight: 500;
+		letter-spacing: 0.125vw;
+		text-transform: lowercase;
+		font-size: 7.5vw;
+		padding-top: 1vw;
+	}
 	.mobile_family .mobile_family_text{
-		background-color: rgb(216, 182, 106);
+		background-color: #f9f2de;
 		width: 90%;
 		margin: 0 auto;
 
 	}
-
 	.mobile_family .mobile_family_image{
 		box-sizing: border-box;
 		width: 30%;
 		float: left;
 	}
-
 	.mobile_family_image img{
 		width: 20vw;
     	height: auto;
     	margin: 0 auto;
     	padding: 10% 0% 10% 0%;
 	}
-
 	.mobile_family .mobile_family_instructor_class{
 		box-sizing: border-box;
 		width: 70%;
 		float: right;
 	}
-
 	.mobile_family_text p{
 		font-family: "Open Sans";
 		padding: 0% 10% 0% 10%;
 		font-size: 3.75vw;
     	text-align: justify;
     	padding-bottom: 5%;
+    	color: #7E7E7E;
 	}
 
 @media screen and (max-width: 420px){

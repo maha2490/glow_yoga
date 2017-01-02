@@ -115,15 +115,19 @@ $(document).ready(function(){
 
 // **********  FAQ DROPDOWNS  **********
 
+
+
   $("main #faq_left p").hide();
 
   $("main #faq_left h3").click(function(){
-      $(this).next().slideToggle(); 
-      
-    });
+      $(this).next().slideToggle();     
+  });
+  
   $(".dropdown").click(function(){
     $(this).toggleClass("js_nav_active_box");
   });
+
+
 });
 
 // GOOGLE MAP THINGS _________________________
