@@ -460,13 +460,13 @@ hr.guidelines_underline {
 }
 @media screen and (max-width: 844px) and (min-width: 734px) {
   p.yearly_disclaimer {
-    top: 36vw;
-    left: 43vw;
+    top: 36.5vw;
+    left: 36vw;
   }
 }
 @media screen and (max-width: 1265px) and (min-width: 111px) {
   p.class_packages_disclaimers.first {
-    top: 67.5vw;
+    top: 70.5vw;
     left: 22vw;
   }
 }
@@ -530,7 +530,7 @@ hr.guidelines_underline {
 
 @media screen and (max-width: 480px) and (min-width: 420px) {
   p.class_packages_disclaimers.first {
-      top: 147.5vw;
+      top: 148.5vw;
       left: 38vw;
   }
 }
@@ -567,7 +567,7 @@ hr.guidelines_underline {
   }
   p.yearly_disclaimer {
     top: 104.5vw;
-    left: 38vw;
+    left: 28vw;
   }
 }
 @media screen and (max-width: 390px){
@@ -605,14 +605,14 @@ hr.guidelines_underline {
     line-height: 3.1vw;
   }
   p.yearly_disclaimer {
-    top: 112vw;
-    left: 38vw;
+    top: 114vw;
+    left: 23vw;
   }
 }
 @media screen and (max-width: 375px) {
   p.yearly_disclaimer {
-    top: 113vw;
-    left: 35vw;
+    top: 115vw;
+    left: 23vw;
   }
   p.class_packages_disclaimers.first {
     top: 203.5vw;
@@ -621,14 +621,14 @@ hr.guidelines_underline {
     box-shadow: 0px 4px 14px rgba(126,126,126,0.8);
   }
 }
-@media screen and (max-width: 359px) {
+@media screen and (max-width: 360px) {
   p.class_packages_disclaimers.first {
-      top: 199.5vw;
+      top: 208.5vw;
   }
 }
 @media screen and (max-width: 344px) {
   p.class_packages_disclaimers.first {
-      top: 204.5vw;
+      top: 206.5vw;
   } 
   p.yearly_disclaimer{
     top: 116vw;
