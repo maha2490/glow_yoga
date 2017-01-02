@@ -1,7 +1,7 @@
+// JQUERY THINGS _________________________
 $(document).ready(function(){
-
-// **********  FAMILY.HTML  **********  
-
+  
+// **********  FAMILY DROPDOWNS  **********  
   // Hide the extra content initially
   $('.read-more-content').addClass('hide')
   $('.read-more-show, .read-more-hide').removeClass('hide')
@@ -20,7 +20,7 @@ $(document).ready(function(){
     e.preventDefault();
   });
 
-// **********  FAMILY.HTML (mobile)  **********  
+// **********  FAMILY DROPDOWNS (mobile)  **********  
 
   // $(".mobile_family_text").hide();  
 
@@ -113,7 +113,7 @@ $(document).ready(function(){
       $(".jeanmarie_text").slideToggle();
   });
 
-// **********  FAQ.HTML  **********
+// **********  FAQ DROPDOWNS  **********
 
   $("main #faq_left p").hide();
 
@@ -127,34 +127,44 @@ $(document).ready(function(){
 
 });
 
+	$("main #faq_left p").hide();
 
-//New google map test
+	$("main #faq_left h3").click(function(){
+			$(this).next().slideToggle(); 
+			
+		});
+	$(".dropdown").click(function(){
+		$(this).toggleClass("js_nav_active_box");
+	});
 
-// function initMap() {
-//   var uluru = {lat: 25.789, lng: -80.140};
-//   var map = new google.maps.Map(document.getElementById('map'), {
-//     zoom: 16,
-//     center: uluru
-//   });
-//   var marker = new google.maps.Marker({
-//     position: uluru,
-//     map: map
-//   });
-// }
+});
 
+// GOOGLE MAP THINGS _________________________
 var map;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     zoom: 16,
-    center: new google.maps.LatLng(25.789,  -80.140),
+    center: new google.maps.LatLng(25.789, -80.140),
     mapTypeId: 'roadmap'
   });
 
+  // ICONS_____________
+  var glowImage = {
+      url: 'assets/glow_marker3.png', // image is 512 x 512
+      scaledSize : new google.maps.Size(52, 52),
+  };
+
   var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+
   var icons = {
     parking: {
       name: 'Parking',
       icon: iconBase + 'parking_lot_maps.png'
+    },
+    glowYoga: {
+      name: 'Glow Yoga',
+
+      icon: glowImage
     }
   };
 
@@ -165,104 +175,40 @@ function initMap() {
       map: map
     });
   }
-
+  
   var features = [
     { position: new google.maps.LatLng(25.7897423, -80.1400118),
         type: 'parking'
     }, {
       position: new google.maps.LatLng(25.7869427, -80.138672),
       type: 'parking'
-    }
+    }, {
+      // changing the marker positioning:
+      // move at the thousandths, increase lat moves up on x axis
+      // and                      increase lng moves left on y axis
+      position: new google.maps.LatLng(25.7885976, -80.1402493),
+      type: 'glowYoga'
+      }
   ];
 
   for (var i = 0, feature; feature = features[i]; i++) {
     addMarker(feature);
   }
+  
+  // legend, if you want to reactivate. will need glow marker img (couldn't figure out initially)
+  // var legend = document.getElementById('legend');
+  // for (var key in icons) {
+  //   var type = icons[key];
+  //   var name = type.name;
+  //   var icon = type.icon;
+  //   var div = document.createElement('div');
+  //   div.innerHTML = '<img src="' + icon + '"> ' + name;
+  //   legend.appendChild(div);
+  // }
 
-  var legend = document.getElementById('legend');
-  for (var key in icons) {
-    var type = icons[key];
-    var name = type.name;
-    var icon = type.icon;
-    var div = document.createElement('div');
-    div.innerHTML = '<img src="' + icon + '"> ' + name;
-    legend.appendChild(div);
-  }
-
-  map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
+  // map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
 }
 
 
 
-// var map;
-//   function initMap() {
-
-//   	var glow_yoga = {lat: 25.789, lng: -80.140};
-
-//   	var marker = new google.maps.Marker({
-//   		position: glow_yoga,
-//   		map: map
-//   	})
-//     map = new google.maps.Map(document.getElementById('map'), {
-//       zoom: 16,
-//       center: glow_yoga,
-//       mapTypeId: 'roadmap'
-//     });
-
-//     var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
-//     var icons = {
-//       parking: {
-//         name: 'Parking',
-//         icon: iconBase + 'parking_lot_maps.png'
-//       }
-//     };
-
-//     function addMarker(feature) {
-//       var marker = new google.maps.Marker({
-//         position: feature.position,
-//         icon: icons[feature.type].icon,
-//         map: map
-//       });
-//     }
-
-//     var features = [
-//       {
-//         position: new google.maps.LatLng(25.7897423, -80.1400118),
-//         type: 'parking'
-//       }, {
-//         position: new google.maps.LatLng(25.7869427, -80.138672),
-//         type: 'parking'
-//       }
-//     ];
-
-//     for (var i = 0, feature; feature = features[i]; i++) {
-//       addMarker(feature);
-//     }
-
-//     var legend = document.getElementById('legend');
-//     for (var key in icons) {
-//       var type = icons[key];
-//       var name = type.name;
-//       var icon = type.icon;
-//       var div = document.createElement('div');
-//       div.innerHTML = '<img src="' + icon + '"> ' + name;
-//       legend.appendChild(div);
-//     }
-
-//     map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
-//   }
-
-// OLD SCRIPT BEFORE MAP CHANGE
-
-// function initMap() {
-// 	var uluru = {lat: 25.789, lng: -80.140};
-// 	var map = new google.maps.Map(document.getElementById('map'), {
-// 		zoom: 16,
-// 		center: uluru
-// 	});
-// 	var marker = new google.maps.Marker({
-// 		position: uluru,
-// 		map: map
-// 	});
-// }
 
