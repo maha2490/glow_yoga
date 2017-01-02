@@ -1,6 +1,6 @@
 // JQUERY THINGS _________________________
 $(document).ready(function(){
-  
+ 
 // **********  FAMILY DROPDOWNS  **********  
   // Hide the extra content initially
   $('.read-more-content').addClass('hide')
@@ -124,19 +124,6 @@ $(document).ready(function(){
   $(".dropdown").click(function(){
     $(this).toggleClass("js_nav_active_box");
   });
-
-});
-
-	$("main #faq_left p").hide();
-
-	$("main #faq_left h3").click(function(){
-			$(this).next().slideToggle(); 
-			
-		});
-	$(".dropdown").click(function(){
-		$(this).toggleClass("js_nav_active_box");
-	});
-
 });
 
 // GOOGLE MAP THINGS _________________________
