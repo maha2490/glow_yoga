@@ -25,24 +25,24 @@ function initMap() {
     zoom: 16,
     center: new google.maps.LatLng(25.789, -80.140),
     mapTypeId: 'roadmap'
-});
+  });
 
-// ICONS_____________
-var glowImage = {
-    url: 'assets/glow_favicon.png', // image is 512 x 512
-    scaledSize : new google.maps.Size(52, 52),
-};
-var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
-var icons = {
-  parking: {
-    name: 'Parking',
-    icon: iconBase + 'parking_lot_maps.png'
-  },
-  glowYoga: {
-    name: 'Glow Yoga',
-    icon: glowImage
-  }
-};
+  // ICONS_____________
+  var glowImage = {
+      url: 'assets/glow_marker3.png', // image is 512 x 512
+      scaledSize : new google.maps.Size(52, 52),
+  };
+  var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+  var icons = {
+    parking: {
+      name: 'Parking',
+      icon: iconBase + 'parking_lot_maps.png'
+    },
+    glowYoga: {
+      name: 'Glow Yoga',
+      icon: glowImage
+    }
+  };
 
   function addMarker(feature) {
     var marker = new google.maps.Marker({
@@ -52,7 +52,6 @@ var icons = {
     });
   }
 
-  
 
   var features = [
     { position: new google.maps.LatLng(25.7897423, -80.1400118),
@@ -61,7 +60,7 @@ var icons = {
       position: new google.maps.LatLng(25.7869427, -80.138672),
       type: 'parking'
     }, {
-      position: new google.maps.LatLng(25.789, -80.140),
+      position: new google.maps.LatLng(25.7885976, -80.1402493),
       type: 'glowYoga'
       }
   ];
