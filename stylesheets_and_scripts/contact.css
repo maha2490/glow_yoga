@@ -14,51 +14,6 @@ header {
     padding-bottom: 1%;
     color: #ad7f04;
 }
-/*.btn {
-	font-family: "Raleway";
-	background: #28bfd7;
-	border-radius: 28px;
-   	color: #ffffff;
-    font-size: 20px;
-  	padding: 10px 20px 10px 20px;
-    text-decoration: none;
-}*/
-button.standard {
-	font-family: "Raleway";
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: .175vw;
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  /*background: #93f0eb;*/
-  background-color: #e7a905;
-  border-color: #e7a905;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 18px;
-  padding: 14px 22px 14px 22px;
-  text-decoration: none;
-  border-color: #e7a905;
-}
-button:focus {
-	outline:0;
-}
-button.standard:hover {
-  background: #fac025;
-  background-image: -webkit-linear-gradient(top, #fac025, #f2b206);
-  background-image: -moz-linear-gradient(top, #fac025, #f2b206);
-  background-image: -ms-linear-gradient(top, #fac025, #f2b206);
-  background-image: -o-linear-gradient(top, #fac025, #f2b206);
-  background-image: linear-gradient(to bottom, #fac025, #f2b206);
-  text-decoration: none;
-}
-button.standard:active {
-  background: #ce9704;
-  text-decoration: none;
-}
 
 .js_nav_active_box {
     /*border: 2px solid #f9f2de;*/
@@ -70,8 +25,27 @@ button.standard:active {
     margin-bottom: -9%;
     margin-left: 13.5%;
 }
+/*components queries__________________________*/
+@media screen and (max-width: 945px) and (min-width: 745px) {
+  .js_nav_active_box {
+    padding: 4% 5% 8% 5%;
+    margin-top: -7%;
+  }
+}
+@media screen and (max-width: 744px) and (min-width: 631px) {
+  .js_nav_active_box {
+    padding: 1% 5% 8% 5%;
+    margin-top: -4%;
+  }
+}
+@media screen and (max-width: 630px) and (min-width: 421px) {
+  .js_nav_active_box {
+    padding: 0 5% 8% 5%;
+    margin-top: -7%;
+  }
 
-/*NEW BUTTON STYLE??*/
+}
+/* BUTTON STUFF ______________________________*/
 .animate {
   transition: all 0.1s;
   -webkit-transition: all 0.1s;
@@ -101,7 +75,7 @@ button.standard:active {
   border-bottom: 1px solid;
 }
 
-/*__________________________________*/
+/*CONTACT __________________________________*/
 main.middle {
   white-space: nowrap;
   /*background-color: rgba(254,238,198, 0.8);
@@ -233,6 +207,11 @@ div.contact_info_buttons {
     border-bottom: 3px solid #d9a25d;
   }
 }
+@media screen and (max-width: 1275px) and (min-width: 801px){
+  main.middle {
+    margin-top: 0;
+  }
+}
 @media screen and (max-width: 800px) {
   .contact_info p {
     font-size: 1.4vw;
@@ -250,7 +229,10 @@ div.contact_info_buttons {
     padding: 2.5% 4.5%;
   }
 }
-@media screen and (max-width: 629px) and (min-width: 200px) {
+@media screen and (max-width: 629px) and (min-width: 421px) {
+  main.middle {
+    margin-top: 1%;
+  }
  .left_half_viewport, 
  .right_half_viewport {
     display: block;
@@ -478,13 +460,13 @@ hr.guidelines_underline {
 }
 @media screen and (max-width: 844px) and (min-width: 734px) {
   p.yearly_disclaimer {
-    top: 36vw;
-    left: 43vw;
+    top: 36.5vw;
+    left: 36vw;
   }
 }
 @media screen and (max-width: 1265px) and (min-width: 111px) {
   p.class_packages_disclaimers.first {
-    top: 67.5vw;
+    top: 70.5vw;
     left: 22vw;
   }
 }
@@ -548,7 +530,7 @@ hr.guidelines_underline {
 
 @media screen and (max-width: 480px) and (min-width: 420px) {
   p.class_packages_disclaimers.first {
-      top: 147.5vw;
+      top: 148.5vw;
       left: 38vw;
   }
 }
@@ -585,7 +567,7 @@ hr.guidelines_underline {
   }
   p.yearly_disclaimer {
     top: 104.5vw;
-    left: 38vw;
+    left: 28vw;
   }
 }
 @media screen and (max-width: 390px){
@@ -623,14 +605,14 @@ hr.guidelines_underline {
     line-height: 3.1vw;
   }
   p.yearly_disclaimer {
-    top: 112vw;
-    left: 38vw;
+    top: 114vw;
+    left: 23vw;
   }
 }
 @media screen and (max-width: 375px) {
   p.yearly_disclaimer {
-    top: 113vw;
-    left: 35vw;
+    top: 115vw;
+    left: 23vw;
   }
   p.class_packages_disclaimers.first {
     top: 203.5vw;
@@ -639,14 +621,14 @@ hr.guidelines_underline {
     box-shadow: 0px 4px 14px rgba(126,126,126,0.8);
   }
 }
-@media screen and (max-width: 359px) {
+@media screen and (max-width: 360px) {
   p.class_packages_disclaimers.first {
-      top: 199.5vw;
+      top: 208.5vw;
   }
 }
 @media screen and (max-width: 344px) {
   p.class_packages_disclaimers.first {
-      top: 204.5vw;
+      top: 206.5vw;
   } 
   p.yearly_disclaimer{
     top: 116vw;
