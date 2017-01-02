@@ -1,17 +1,7 @@
 // JQUERY THINGS _________________________
 $(document).ready(function(){
-	
-	$("main #faq_left p").hide();
-
-	$("main #faq_left h3").click(function(){
-			$(this).next().slideToggle(); 
-			
-		});
-	$(".dropdown").click(function(){
-		$(this).toggleClass("js_nav_active_box");
-	});
-
-  // **********  FAMILY DROPDOWNS  **********  
+ 
+// **********  FAMILY DROPDOWNS  **********  
   // Hide the extra content initially
   $('.read-more-content').addClass('hide')
   $('.read-more-show, .read-more-hide').removeClass('hide')
@@ -125,15 +115,8 @@ $(document).ready(function(){
 
 // **********  FAQ DROPDOWNS  **********
 
-  $("main #faq_left p").hide();
 
-  $("main #faq_left h3").click(function(){
-      $(this).next().slideToggle(); 
-      
-    });
-  $(".dropdown").click(function(){
-    $(this).toggleClass("js_nav_active_box");
-  });
+<<<<<<< HEAD
 
   $("main #faq_left p").hide();
 
@@ -146,11 +129,9 @@ $(document).ready(function(){
   });
 
 
-
 });
 
-
-// ORIG GOOGLE MAP THINGS _________________________
+// GOOGLE MAP THINGS _________________________
 var map;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
@@ -164,7 +145,9 @@ function initMap() {
       url: 'assets/glow_marker6.png', // image is 512 x 512
       scaledSize : new google.maps.Size(62, 62),
   };
+
   var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+
   var icons = {
     parking: {
       name: 'Parking',
@@ -172,6 +155,7 @@ function initMap() {
     },
     glowYoga: {
       name: 'Glow Yoga',
+
       icon: glowImage
     }
   };
@@ -183,8 +167,7 @@ function initMap() {
       map: map
     });
   }
-
-
+  
   var features = [
     { position: new google.maps.LatLng(25.7897423, -80.1400118),
         type: 'parking'
@@ -203,6 +186,7 @@ function initMap() {
   for (var i = 0, feature; feature = features[i]; i++) {
     addMarker(feature);
   }
+
   // legend, if you want to reactivate. will need glow marker img (couldn't figure out initially)
   // var legend = document.getElementById('legend');
   // for (var key in icons) {
