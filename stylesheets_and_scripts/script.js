@@ -135,14 +135,12 @@ $(document).ready(function(){
     $(this).toggleClass("js_nav_active_box");
   });
 
-
-
   $("main #faq_left p").hide();
 
   $("main #faq_left h3").click(function(){
-      $(this).next().slideToggle(); 
-      
-    });
+      $(this).next().slideToggle();     
+  });
+  
   $(".dropdown").click(function(){
     $(this).toggleClass("js_nav_active_box");
   });
