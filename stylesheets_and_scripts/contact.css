@@ -157,16 +157,13 @@ hr.contact_divider {
   white-space: normal;
   color: #FFF;
   padding: 3% 6% 3% 3%;
-  /*border: 2px solid #E7A905;*/
-/*  border: 2px solid #ffffff;*/
   color: #7E7E7E;
   background-color: #fff;
-/*  min-height: 9vw;*/
   box-shadow: -6px 7px 26px rgba(126,126,126,0.8);
 }
 #map {
 	height: 35vw;
-  width: 90%;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
 }
