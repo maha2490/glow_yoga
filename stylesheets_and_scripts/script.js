@@ -17,7 +17,6 @@ $(document).ready(function(){
 
 });
 
-
 // ORIG GOOGLE MAP THINGS _________________________
 var map;
 function initMap() {
@@ -32,7 +31,9 @@ function initMap() {
       url: 'assets/glow_marker3.png', // image is 512 x 512
       scaledSize : new google.maps.Size(52, 52),
   };
+
   var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+
   var icons = {
     parking: {
       name: 'Parking',
@@ -40,6 +41,7 @@ function initMap() {
     },
     glowYoga: {
       name: 'Glow Yoga',
+
       icon: glowImage
     }
   };
@@ -51,6 +53,7 @@ function initMap() {
       map: map
     });
   }
+  
 
 
   var features = [
